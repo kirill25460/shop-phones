@@ -1,0 +1,30 @@
+[
+    {
+      "id": 1,
+      "name": "iPhone 14 Pro",
+      "price": 999,
+      "variants": [
+        { "color": "#1C1C1E", "image": "/iphone14pro-black.png" },
+        { "color": "#36013F", "image": "/iphone-14-pro-deep-purple.png" }
+      ]
+    },
+    {
+        "id": 2,
+        "name": "iPhone 15 Pro",
+        "price": 999,
+        "variants": [
+            { "color": "#1C1C1E", "image": "/iphone14pro-black.png" },
+            { "color": "#36013F", "image": "/iphone-14-pro-deep-purple.png" }
+          ]
+      },
+      {
+        "id": 3,
+        "name": "iPhone 16 Pro",
+        "price": 999,
+        "variants": [
+      { "color": "#1C1C1E", "image": "/iphone14pro-black.png" },
+      { "color": "#36013F", "image": "/iphone-14-pro-deep-purple.png" }
+    ]
+      }
+  ]
+  
