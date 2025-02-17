@@ -4,8 +4,9 @@
       "name": "iPhone 14 Pro",
       "price": 999,
       "variants": [
-        { "color": "#1C1C1E", "image": "/iphone14pro-black.png", "colorName":"black" },
-        { "color": "#36013F", "image": "/iphone-14-pro-deep-purple.png", "colorName":"deep-purple" }
+        { "color": "#1C1C1E", "image": "/iphone14pro-black.png", "colorName":"Black" },
+        { "color": "#6b16bf", "image": "/iphone-14-pro-deep-purple.png", "colorName":"Deep-purple" },
+        { "color": "#c0c0c0", "image": "/14roSilver.JPG", "colorName":"Silver" }
       ]
     },
     {
@@ -13,8 +14,9 @@
         "name": "iPhone 15 Pro",
         "price": 999,
         "variants": [
-          { "color": "#1C1C1E", "image": "/iphone14pro-black.png", "colorName":"black" },
-          { "color": "#36013F", "image": "/iphone-14-pro-deep-purple.png", "colorName":"deep-purple" }
+          { "color": "#1C1C1E", "image": "/iphone14pro-black.png", "colorName":"Black" },
+          { "color": "#6b16bf", "image": "/iphone-14-pro-deep-purple.png", "colorName":"Deep-purple" },
+          { "color": "#c0c0c0", "image": "/14roSilver.JPG", "colorName":"Silver" }
           ]
       },
       {
@@ -22,8 +24,9 @@
         "name": "iPhone 16 Pro",
         "price": 999,
         "variants": [
-          { "color": "#1C1C1E", "image": "/iphone14pro-black.png", "colorName":"black" },
-          { "color": "#36013F", "image": "/iphone-14-pro-deep-purple.png", "colorName":"deep-purple" }
+          { "color": "#1C1C1E", "image": "/iphone14pro-black.png", "colorName":"Black" },
+          { "color": "#6b16bf", "image": "/iphone-14-pro-deep-purple.png", "colorName":"Deep-purple" },
+          { "color": "#c0c0c0", "image": "/14roSilver.JPG", "colorName":"Silver" }
     ]
       }
   ]

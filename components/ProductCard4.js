@@ -1,38 +1,22 @@
 import { useState, useRef, useEffect } from "react";
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 import { useCart } from "@/components/CartContext";
 import VanillaTilt from "vanilla-tilt";
-
-// Анимация для волнового эффекта
-const waveAnimation = keyframes`
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-`;
 
 const Card = styled.div`
   width: 300px;
   height: 450px;
-
-  background-size: 200% 200%;
+  background: #fff;
   border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   position: relative;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   transform-style: preserve-3d;
-  animation: ${waveAnimation} 10s ease infinite;
 
   &:hover {
     transform: translateY(-10px);
-    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.3);
-    animation: none; // Останавливаем анимацию при наведении
-    background: ${({ bgColor }) => bgColor}; // Меняем цвет фона при наведении
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2);
   }
 
   &:hover .overlay {
@@ -80,12 +64,11 @@ const AddToCartButton = styled.button`
   border-radius: 25px;
   font-size: 1rem;
   cursor: pointer;
-  transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease;
+  transition: background 0.3s ease, color 0.3s ease;
 
   &:hover {
     background: #000;
     color: #fff;
-    transform: scale(1.1);
   }
 `;
 
@@ -98,21 +81,11 @@ const ProductTitle = styled.h3`
   font-size: 1.5rem;
   margin-bottom: 10px;
   color: #333;
-  transition: color 0.3s ease;
-
-  ${Card}:hover & {
-    color: #fff; // Меняем цвет текста при наведении
-  }
 `;
 
 const ProductPrice = styled.p`
   font-size: 1.2rem;
   color: #666;
-  transition: color 0.3s ease;
-
-  ${Card}:hover & {
-    color: #fff; // Меняем цвет текста при наведении
-  }
 `;
 
 const ColorOptions = styled.div`
@@ -129,15 +102,14 @@ const ColorCircle = styled.div`
   background: ${({ color }) => color};
   cursor: pointer;
   border: 2px solid ${({ selected }) => (selected ? "#000" : "transparent")};
-  transition: border 0.3s ease, transform 0.3s ease;
+  transition: border 0.3s ease;
 
   &:hover {
     border: 2px solid #000;
-    transform: scale(1.2);
   }
 `;
 
-export default function ProductCard({ product }) {
+export default function ProductCard4({ product }) {
   const tiltRef = useRef(null);
   const { addToCart } = useCart();
   const [selectedVariant, setSelectedVariant] = useState(product?.variants?.[0] || {});
@@ -161,7 +133,7 @@ export default function ProductCard({ product }) {
   }, []);
 
   return (
-    <Card ref={tiltRef} bgColor={bgColor}>
+    <Card ref={tiltRef}>
       <ImageContainer>
         <ProductImage
           className="product-image"

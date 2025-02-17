@@ -1,16 +1,31 @@
 "use client";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import styled from "styled-components";
 import ProductCard from "@/components/ProductCard";
+import ProductCard2 from "@/components/ProductCard2";
+import ProductCard3 from "@/components/ProductCard3";
+import ProductCard4 from "@/components/ProductCard4";
 
+const Container = styled.div`
+
+  display: flex;
+  gap: 20px;
+
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+  justify-content: center;
+
+`;
 export default function Home() {
   const [products, setProducts] = useState([]);
-
+ 
   useEffect(() => {
     fetch("/products.json")
       .then((res) => res.json())
       .then((data) => setProducts(data));
   }, []);
+
 
   return (
     <div style={{ textAlign: "center", marginTop: "20px" }}>
@@ -19,11 +34,26 @@ export default function Home() {
         Перейти в корзину
       </button>
     </Link>
-    <div style={{ display: "flex", gap: "20px", justifyContent: "center", marginTop: "50px" }}>
+    <Container>
       {products.map((product) => (
         <ProductCard key={product.id} product={product} />
       ))}
-    </div>
+    </Container>
+    <Container >
+      {products.map((product) => (
+        <ProductCard2 key={product.id} product={product} />
+      ))}
+    </Container>
+    <Container>
+      {products.map((product) => (
+        <ProductCard3 key={product.id} product={product} />
+      ))}
+    </Container>
+    <Container>
+      {products.map((product) => (
+        <ProductCard4 key={product.id} product={product} />
+      ))}
+    </Container>
     </div>
   );
 }
