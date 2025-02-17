@@ -6,6 +6,10 @@ import ProductCard from "@/components/ProductCard";
 import ProductCard2 from "@/components/ProductCard2";
 import ProductCard3 from "@/components/ProductCard3";
 import ProductCard4 from "@/components/ProductCard4";
+import ProductCard5 from "@/components/ProductCard5";
+import ProductCard6 from "@/components/ProductCard6";
+import ProductCard7 from "@/components/ProductCard7";
+import ProductCard8 from "@/components/ProductCard8";
 
 const Container = styled.div`
 
@@ -52,6 +56,26 @@ export default function Home() {
     <Container>
       {products.map((product) => (
         <ProductCard4 key={product.id} product={product} />
+      ))}
+    </Container>
+    <Container>
+      {products.map((product) => (
+        <ProductCard5 key={product.id} product={product} />
+      ))}
+    </Container>
+    <Container>
+      {products.map((product) => (
+        <ProductCard6 key={product.id} product={product} />
+      ))}
+    </Container>
+    <Container>
+      {products.map((product) => (
+        <ProductCard7 key={product.id} product={product} />
+      ))}
+    </Container>
+    <Container>
+      {products.map((product) => (
+        <ProductCard8 key={product.id} product={product} />
       ))}
     </Container>
     </div>

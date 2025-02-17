@@ -6,7 +6,7 @@
       "variants": [
         { "color": "#1C1C1E", "image": "/iphone14pro-black.png", "colorName":"Black" },
         { "color": "#6b16bf", "image": "/iphone-14-pro-deep-purple.png", "colorName":"Deep-purple" },
-        { "color": "#c0c0c0", "image": "/14roSilver.JPG", "colorName":"Silver" }
+        { "color": "#c0c0c0", "image": "/14roSilver.png", "colorName":"Silver" }
       ]
     },
     {
@@ -16,7 +16,7 @@
         "variants": [
           { "color": "#1C1C1E", "image": "/iphone14pro-black.png", "colorName":"Black" },
           { "color": "#6b16bf", "image": "/iphone-14-pro-deep-purple.png", "colorName":"Deep-purple" },
-          { "color": "#c0c0c0", "image": "/14roSilver.JPG", "colorName":"Silver" }
+          { "color": "#c0c0c0", "image": "/14roSilver.png", "colorName":"Silver" }
           ]
       },
       {
@@ -26,7 +26,7 @@
         "variants": [
           { "color": "#1C1C1E", "image": "/iphone14pro-black.png", "colorName":"Black" },
           { "color": "#6b16bf", "image": "/iphone-14-pro-deep-purple.png", "colorName":"Deep-purple" },
-          { "color": "#c0c0c0", "image": "/14roSilver.JPG", "colorName":"Silver" }
+          { "color": "#c0c0c0", "image": "/14roSilver.png", "colorName":"Silver" }
     ]
       }
   ]
