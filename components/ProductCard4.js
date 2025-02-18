@@ -1,7 +1,19 @@
 import { useState, useRef, useEffect } from "react";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { useCart } from "@/components/CartContext";
 import VanillaTilt from "vanilla-tilt";
+
+// Анимация для выезжающей панели
+const slideIn = keyframes`
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+`;
 
 const Card = styled.div`
   width: 300px;
@@ -25,6 +37,11 @@ const Card = styled.div`
 
   &:hover .product-image {
     transform: scale(1.1);
+  }
+
+  &:hover .info-panel {
+    transform: translateX(0);
+    opacity: 1;
   }
 `;
 
@@ -109,6 +126,35 @@ const ColorCircle = styled.div`
   }
 `;
 
+const InfoPanel = styled.div`
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 250px;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  transform: translateX(100%);
+  opacity: 0;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+`;
+
+const InfoItem = styled.div`
+  font-size: 0.9rem;
+  color: #333;
+  margin-bottom: 10px;
+
+  strong {
+    font-weight: 600;
+    color: #000;
+  }
+`;
+
 export default function ProductCard4({ product }) {
   const tiltRef = useRef(null);
   const { addToCart } = useCart();
@@ -141,9 +187,7 @@ export default function ProductCard4({ product }) {
           alt={product.name}
         />
         <Overlay className="overlay">
-          <AddToCartButton onClick={() => addToCart(product, selectedVariant)}>
-            Add to Cart
-          </AddToCartButton>
+          
         </Overlay>
       </ImageContainer>
       <ProductInfo>
@@ -163,6 +207,47 @@ export default function ProductCard4({ product }) {
           ))}
         </ColorOptions>
       </ProductInfo>
+
+      {/* Выезжающая панель с информацией */}
+      <InfoPanel className="info-panel">
+      <InfoItem>
+          <strong>{product.name || "N/A"}</strong> 
+        </InfoItem>
+        <InfoItem>
+          <strong>${product.price || "N/A"}</strong> 
+        </InfoItem>
+        <InfoItem>
+          <strong>Memory:</strong> {product.memory || "N/A"}
+        </InfoItem>
+        <InfoItem>
+          <strong>Screen Size:</strong> {product.screenSize || "N/A"}
+        </InfoItem>
+        <InfoItem>
+          <strong>Battery Capacity:</strong> {product.batteryCapacity || "N/A"}
+        </InfoItem>
+        <InfoItem>
+          <strong>Processor:</strong> {product.processor || "N/A"}
+        </InfoItem>
+        <InfoItem>
+          <strong>Camera:</strong> {product.camera || "N/A"}
+        </InfoItem>
+        <ColorOptions>
+          {product.variants?.map((variant, index) => (
+            <ColorCircle
+              key={index}
+              color={variant.color}
+              selected={selectedVariant.color === variant.color}
+              onClick={() => {
+                setSelectedVariant(variant);
+                setBgColor(variant.color);
+              }}
+            />
+          ))}
+        </ColorOptions>
+        <AddToCartButton onClick={() => addToCart(product, selectedVariant)}>
+            Add to Cart
+          </AddToCartButton>
+      </InfoPanel>
     </Card>
   );
 }
