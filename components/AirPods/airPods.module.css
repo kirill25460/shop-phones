@@ -1,0 +1,76 @@
+.container {
+  position: relative;
+  height: 100vh;
+  background: radial-gradient(
+    107.59% 107.59% at 50% 86.42%,
+    #f5f5f7 0%,
+    #bbbbbb 100%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.textwrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nameIphone {
+  font-family: "Geologica";
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 42px;
+  letter-spacing: 0%;
+  color: #060606;
+}
+
+.title {
+  font-family: "Geologica";
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 25px;
+  letter-spacing: 0px;
+padding-top: 10px;
+padding-bottom: 50px;
+  color: #5a5a5a;
+}
+
+.price {
+  font-family: "Geologica";
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 51.42px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #060606;
+  padding-bottom: 20px;
+}
+
+.mainButton {
+  width: 165px;
+  height: 45px;
+  border: none;
+  border-radius: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  background-color: #0071e3;
+}
+
+.imageWrapper {
+  overflow: hidden;
+
+  width: 376px;
+  height: 427px;
+
+}
+
+.imageWrapper img {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
