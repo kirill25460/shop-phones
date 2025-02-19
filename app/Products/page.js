@@ -33,11 +33,7 @@ export default function Home() {
 
   return (
     <div style={{ textAlign: "center", marginTop: "20px" }}>
-    <Link href="/cart">
-      <button style={{ padding: "10px", background: "black", color: "white", border: "none", cursor: "pointer" }}>
-        Перейти в корзину
-      </button>
-    </Link>
+   
 
     
     {/* <Container>

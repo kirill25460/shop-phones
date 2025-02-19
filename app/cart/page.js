@@ -1,5 +1,6 @@
 "use client";
 import { useCart } from "@/components/CartContext";
+import Header from "../../components/header/header";
 import styled from "styled-components";
 
 const Container = styled.div`
@@ -32,6 +33,7 @@ export default function CartPage() {
 
   return (
     <Container>
+       <Header />
       <h1>Cart</h1>
       {cart.length === 0 ? (
         <p>Cart is empty</p>

@@ -1,6 +1,6 @@
 .container{
     position: relative;
-    height: 100vh;
+  
     background-color: #FFFFFF;
     display: flex;
     justify-content: center;
@@ -12,14 +12,66 @@
     gap: 20px; 
     list-style: none;
     padding: 0;
-    max-width: 1200px; 
   }
   
-  .list li {
+  .listItem {
+    width: 710px;
+height: 685px;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     background: #f5f5f5;
-    padding: 20px;
+    justify-content: center;
+    position: relative;
+  }
+
+  .listItem h4{
+    margin-top:60px ;
+    font-family: "Geologica";
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 42px;
+    letter-spacing: 0%;
+
+  }
+
+.listItemAbs{
+  position: relative;
+  width: 710px;
+  height: 685px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f5f5f5;
+  text-align: center;
+}
+
+.listItemAbs h4{
+  margin-top:60px ;
+  font-family: "Geologica";
+font-weight: 700;
+font-size: 40px;
+line-height: 42px;
+letter-spacing: 0%;
+
+}
+
+  .listItemBlack{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+width: 710px;
+height: 685px;
+background: radial-gradient(61.01% 269.6% at 30.21% 54.01%, #040404 0%, #141414 100%);
+
+  }
+
+  .imageBottom {
+  position: absolute;
+  bottom: 0;
+  }
+  
+  .imageCenter {
+    align-self: center; 
   }
