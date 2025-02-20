@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useCart } from "@/components/CartContext";
+import { useCart } from "@/components/cart/CartContext";
 import styled from "styled-components";
 
 const Card = styled.div`

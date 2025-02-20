@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import VanillaTilt from "vanilla-tilt";
-import { useCart } from "@/components/CartContext";
+import { useCart } from "@/components/cart/CartContext";
 import styled from "styled-components";
 
 const Card = styled.div`

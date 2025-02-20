@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 import styled, { keyframes } from "styled-components";
-import { useCart } from "@/components/CartContext";
+import { useCart } from "@/components/cart/CartContext";
 import VanillaTilt from "vanilla-tilt";
 
 // Анимация для волнового эффекта

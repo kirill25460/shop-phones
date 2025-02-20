@@ -1,0 +1,15 @@
+.container{
+    height: 100vh;
+    background: radial-gradient(107.59% 107.59% at 50% 86.42%, #F5F5F7 0%, #BBBBBB 100%);
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.wrapList{
+margin-left: 100px;
+}
+
+.list{
+    list-style: none;
+}

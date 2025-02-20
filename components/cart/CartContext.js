@@ -8,6 +8,7 @@ export function CartProvider({ children }) {
 
   const addToCart = (product, variant) => {
     setCart((prev) => [...prev, { ...product, selectedVariant: variant }]);
+    console.log("added")
   };
   const removeFromCart = (index) => {
     setCart((prev) => prev.filter((_, i) => i !== index));

@@ -1,6 +1,6 @@
 import { Geologica } from "next/font/google";
 import { Geist, Geist_Mono } from "next/font/google";
-import { CartProvider } from "@/components/CartContext";
+import { CartProvider } from "@/components/cart/CartContext";
 import "./globals.css";
 
 const geologica = Geologica({

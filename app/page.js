@@ -7,6 +7,7 @@ import Hero from "../components/hero/hero";
 import AirPods from "../components/AirPods/airPods";
 import AssortmentOfGoodsTitle from "../components/assortmentOfGoodsTitle/assortmentOfGoodsTitle";
 import AssortmentOfGoods from "../components/assortmentOfGoods/assortmentOfGoods";
+import Footer from "../components/Footer/footer";
 export default function MainPage() {
   return (
     <div>
@@ -17,6 +18,7 @@ export default function MainPage() {
       <AirPods/>
       <AssortmentOfGoodsTitle/>
       <AssortmentOfGoods/>
+      <Footer/>
     </div>
   );
 }
