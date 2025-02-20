@@ -1,6 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import styled, { keyframes } from "styled-components";
 import { useCart } from "../components/cart/CartContext";
+import Header from "./header/header";
 import VanillaTilt from "vanilla-tilt";
 
 // Анимация для выезжающей панели
@@ -178,8 +179,10 @@ export default function ProductCard4({ product }) {
     };
   }, []);
 
-  return (
+  return (<>
+    <Header />
     <Card ref={tiltRef}>
+      
       <ImageContainer>
         <ProductImage
           className="product-image"
@@ -249,5 +252,6 @@ export default function ProductCard4({ product }) {
           </AddToCartButton>
       </InfoPanel>
     </Card>
+    </>
   );
 }
