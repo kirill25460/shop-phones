@@ -1,0 +1,48 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 108px;
+  margin-bottom: 40px;
+
+}
+
+.title {
+  font-family: "Geologica";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 0px;
+  color: #060606;
+  margin-bottom: 40px;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+}
+
+.listItem {
+font-family: 'Geologica';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 20px;
+color: #5A5A5A;
+
+
+  &:hover {
+    display: flex;
+align-items: center;
+justify-content: center;
+
+    padding: 10px 15px;
+    color: #060606;
+    background: #ffffff;
+    box-shadow: 0px 0.747512px 1.49502px rgba(0, 0, 0, 0.3),
+      0px 0.747512px 2.24254px 0.747512px rgba(0, 0, 0, 0.15);
+    border-radius: 22.4254px;
+  }
+}

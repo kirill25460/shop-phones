@@ -34,7 +34,7 @@ export default function Header() {
       <div className={`${styles.menu} ${isOpen ? styles.open : ''}`}
        onMouseEnter={handleMouseEnter} // Удерживаем меню открытым при наведении на него
        onMouseLeave={handleMouseLeave}>
-        <a href="#">iPhone</a>
+        <a href="/products">iPhone</a>
         <a href="#">AirPods</a>
         <a href="#">MacBook</a>
         <a href="#">Apple Watch</a>
