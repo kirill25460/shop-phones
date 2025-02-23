@@ -15,11 +15,9 @@
   }
 }
 
-
-
 body {
   color: var(--foreground);
-  background: var(--background);
+  /* background: var(--background); */
   font-family: var(--font-geologica);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

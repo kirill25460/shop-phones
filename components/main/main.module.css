@@ -1,60 +1,67 @@
-.container{
-    position: relative;
-    height: 100vh;
-    background: radial-gradient(80.98% 80.98% at 50% 72.8%, #040404 0%, #141414 100%);
-display: flex;
-align-items: center;
-justify-content: center;
+.container {
+  position: relative;
+  margin-top: 143px;
+  background: radial-gradient(
+    80.98% 80.98% at 50% 72.8%,
+    #040404 0%,
+    #141414 100%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 229px;
 }
 
-
-.nameIphone{
-    font-family: Geologica;
-    font-weight: 300;
-    font-size: 30px;
-    line-height: 14px;
-    letter-spacing: 0%;
-    color:  #FFFFFF;
-
+.phoneImage {
+  margin-bottom: -4px;
 }
 
-.title{
-    font-family: Geologica;
-    font-weight: 700;
-    font-size: 40px;
-    letter-spacing: 0%;
-    color: #FFFFFF;
-    padding-top: 35px;
-    padding-bottom: 40px;
-}
-.titleSpan{
-    font-family: Geologica;
-font-weight: 700;
-font-size: 40px;
-line-height: 50px;
-letter-spacing: 0%;
-color: #F3C8A7;
+.nameIphone {
+  font-family: Geologica;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 14px;
+  letter-spacing: 0%;
+  color: #ffffff;
 }
 
-.mainButton{
-width: 253px;
-height: 45px;
-border-radius: 26px;
-font-family: 'Geologica';
-font-style: normal;
-font-weight: 300;
-font-size: 15px;
-line-height: 14px;
-border: none;
-/* identical to box height, or 93% */
-display: flex;
-align-items: center;
-justify-content: center;
-color: #FFFFFF;
-background-color:  #0071E3;
-
+.title {
+  font-family: Geologica;
+  font-weight: 700;
+  font-size: 40px;
+  letter-spacing: 0%;
+  line-height: 50px;
+  color: #ffffff;
+  padding-top: 35px;
+  padding-bottom: 70px;
+}
+.titleSpan {
+  font-family: Geologica;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  letter-spacing: 0%;
+  color: #f3c8a7;
 }
 
+.mainButton {
+  width: 253px;
+  height: 45px;
+  border-radius: 26px;
+  font-family: "Geologica";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 14px;
+  border: none;
+  /* identical to box height, or 93% */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  background-color: #0071e3;
+}
+/* 
 .imageWrapper {
     width: 464px; 
     height: 428px;
@@ -69,5 +76,4 @@ left: 287px;
     object-fit: cover; 
     width: 100%;
     height: auto;
-  }
-  
+  } */

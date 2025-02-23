@@ -11,10 +11,10 @@ export default function CartPage() {
   return (
     <><CartProvider>
       <Header />
-<Cart/>
-<Delivery/>
-<Footer/>
-</CartProvider>
+      <Cart />
+      <Delivery />
+      <Footer />
+    </CartProvider>
     </>
   );
 }

@@ -1,80 +1,120 @@
-.container{
+/* 1240 */
 
-left: 25%;
-z-index: 999;
-height: 45px;
-background-color: black;
-display: flex;
-align-items: center;
-
+.container {
+  margin-top: 70px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
 }
 
-.title{
-    font-family: "Gunterz";
-font-weight: 500;
-font-size: 15px;
-line-height: 14px;
-letter-spacing: 2px;
-color: #fff;
+.headerLogoContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.headerIcon {
+  width: 44px;
+  height: 44px;
+
+  background: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+}
+
+.title {
+  font-family: "Gunterz";
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 14px;
+  letter-spacing: 2px;
+  color: #fff;
 }
 
 .list {
-    list-style: none;
-   display: flex;
-   align-items: center;
-  }
-  
-  .list li {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    color: #f5f5f5;
-    padding: 20px;
-  }
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin: 0 167px 0 125px;
+  gap: 30px;
 
-  .burgerMenu {
-    position: relative;
-  }
-  
-  .burgerIcon {
-    background: none;
-    border: none;
-    font-size: 24px;
-    cursor: pointer;
-    color: #fff;
-  }
-  
-  .menu {
-    display: none;
-    position: absolute;
-    top: 40px;
-    width: 287px;
-    left: 0;
-    background-color: #121212;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    text-align: left;
-  }
-  
-  
-  .menu.open {
-    display: block;
-  }
-  
-  .menu a {
-    font-family: "Geologica";
-font-weight: 300;
-font-size: 16px;
-line-height: 20px;
-letter-spacing: 0%;
+  font-family: "Geologica";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 14px;
+}
 
-    display: block;
-    padding: 12px 16px;
-    text-decoration: none;
-    color: #fff;
-  }
-  
-  .menu a:hover {
-    background-color: #666666;
-  }
+.list li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: #f5f5f5;
+  cursor: pointer;
+}
+
+.burgerMenu {
+  position: relative;
+}
+
+.bucketContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+
+  font-family: "Geologica";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 14px;
+}
+
+.burgerIcon {
+  cursor: pointer;
+  color: #fff;
+  width: 22px;
+  height: 16px;
+}
+
+.searchIcon {
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.menu {
+  display: none;
+  position: absolute;
+  top: 40px;
+  width: 287px;
+  left: 0;
+  background-color: #121212;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  text-align: left;
+}
+
+.menu.open {
+  display: block;
+}
+
+.menu a {
+  font-family: "Geologica";
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0%;
+
+  display: block;
+  padding: 12px 16px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.menu a:hover {
+  background-color: #666666;
+}

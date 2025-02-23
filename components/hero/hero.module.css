@@ -1,82 +1,78 @@
-.container{
-    position: relative;
-    height: 100vh;
-display: flex;
-align-items: center;
-justify-content: space-evenly;
-background: radial-gradient(61.01% 269.6% at 30.21% 54.01%, #040404 0%, #141414 100%);
-
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background: radial-gradient(
+    61.01% 269.6% at 30.21% 54.01%,
+    #040404 0%,
+    #141414 100%
+  );
 }
 
-
-.textwrap{
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
+.textwrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.nameIphone{
-    font-family: "Geologica";
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 42px;
-    letter-spacing: 0%;
-    color: #FFFFFF;
+.nameIphone {
+  font-family: "Geologica";
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 42px;
+  letter-spacing: 0%;
+  color: #ffffff;
 }
 
-.title{
-    font-family: "Geologica";
-    font-weight: 300;
-    font-size: 20px;
-    line-height: 25px;
-    letter-spacing: 0px;    
-    color: #5A5A5A;
-    padding-top: 35px;
-    padding-bottom: 40px;
+.title {
+  font-family: "Geologica";
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 25px;
+  letter-spacing: 0px;
+  color: #5a5a5a;
+  padding-top: 35px;
+  padding-bottom: 40px;
 }
-.titleSpan{
-    font-family: "Geologica";
-font-weight: 700;
-font-size: 40px;
-line-height: 50px;
-letter-spacing: 0%;
-color: #F3C8A7;
+.titleSpan {
+  font-family: "Geologica";
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  letter-spacing: 0%;
+  color: #f3c8a7;
 }
 
-.mainButton{
-width: 165px;
-height: 45px;
-border-radius: 26px;
-font-family: 'Geologica';
-font-style: normal;
-font-weight: 300;
-font-size: 15px;
-line-height: 14px;
-border: none;
-/* identical to box height, or 93% */
-display: flex;
-align-items: center;
-justify-content: center;
-color: #FFFFFF;
-background-color:  #0071E3;
-
+.mainButton {
+  width: 165px;
+  height: 45px;
+  border-radius: 26px;
+  font-family: "Geologica";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 14px;
+  border: none;
+  /* identical to box height, or 93% */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  background-color: #0071e3;
 }
 
 .imageWrapper {
-overflow: hidden;
+  overflow: hidden;
 
-width: 922px;
-height: 495px;
+  width: 922px;
+  height: 495px;
+}
 
-
-  }
-  
-  .imageWrapper img {
-    mix-blend-mode: lighten;
-    object-fit: cover; 
-    width: 100%;
-    height: auto;
-    color: transparent;
-  }
-  
+.imageWrapper img {
+  mix-blend-mode: lighten;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  color: transparent;
+}
