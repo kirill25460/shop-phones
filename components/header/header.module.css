@@ -1,7 +1,7 @@
 /* 1240 */
 
 .container {
-  margin-top: 70px;
+  padding-top: 70px;
   height: 45px;
   display: flex;
   align-items: center;
@@ -87,9 +87,9 @@
 }
 
 .menu {
-  display: none;
+ 
   position: absolute;
-  top: 40px;
+  top: 10px;
   width: 287px;
   left: 0;
   background-color: #121212;
@@ -117,4 +117,16 @@
 
 .menu a:hover {
   background-color: #666666;
+}
+
+
+.ActiveCategoryText{
+  font-family: "Geologica";
+font-weight: 300;
+font-size: 16px;
+line-height: 20px;
+letter-spacing: 0%;
+padding: 12px 16px;
+color: #5A5A5A;
+&:hover{ background-color: #666666;color: #fff;}
 }

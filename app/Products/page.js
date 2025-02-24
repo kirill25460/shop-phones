@@ -22,11 +22,15 @@ export default function ProductsPage() {
       <ProductsTitle />
       <div className={styles.containerProducts}>
         <SideBarProducts />
-        <div className={styles.containerList}>
-          {products.map((product) => (
-            <ProductsList key={product.id} product={product} />
+        <ul className={styles.containerList}>
+        {products.map((product) => (
+            <li key={product.id} className={styles.productItem}>
+              <Link href={`/product/${product.id}`}>
+                <ProductsList product={product} />
+              </Link>
+            </li>
           ))}
-        </div>
+        </ul>
       </div>
     </div>
   );

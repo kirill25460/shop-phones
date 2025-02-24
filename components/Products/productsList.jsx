@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { useState, useRef, useEffect } from "react";
-import Link from "next/link"; 
+
 import styles from "./products.module.css";
 import { useCart } from "../cart/CartContext";
 import VanillaTilt from "vanilla-tilt";
@@ -39,7 +39,7 @@ export default function ProductsList({ product }) {
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
-        <Link href="/product">
+        
           <Image
             className={styles.ProductImage}
             src={selectedVariant.image || product.image}
@@ -99,7 +99,7 @@ export default function ProductsList({ product }) {
             Add to Cart
           </button>
         </div>
-        </Link>
+      
       </div>
    
   );

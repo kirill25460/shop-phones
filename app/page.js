@@ -8,9 +8,10 @@ import AirPods from "../components/AirPods/airPods";
 import AssortmentOfGoodsTitle from "../components/assortmentOfGoodsTitle/assortmentOfGoodsTitle";
 import AssortmentOfGoods from "../components/assortmentOfGoods/assortmentOfGoods";
 import Footer from "../components/Footer/footer";
+import styles from "./page.module.css";
 export default function MainPage() {
   return (
-    <div>
+    <div className={styles.container}>
       <Header />
       <Main />
       <OfferOfTheDay/>
