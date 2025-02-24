@@ -6,7 +6,7 @@ import mainPic from "../../public/offerOfTheDayPic.png";
 export default function OfferOfTheDay() {
   return (
     <div className={styles.container}>
-      <div className={styles.textwrap}>
+      <div>
         <h2 className={styles.nameIphone}>Пропозиція дня</h2>
         <h2 className={styles.title}>
           Apple iPhone 15 Pro 256GB

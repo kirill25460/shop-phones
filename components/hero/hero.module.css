@@ -1,12 +1,13 @@
 .container {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
   background: radial-gradient(
     61.01% 269.6% at 30.21% 54.01%,
     #040404 0%,
     #141414 100%
   );
+  padding: 95px 0;
 }
 
 .textwrap {
@@ -14,6 +15,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-left: -170px;
 }
 
 .nameIphone {

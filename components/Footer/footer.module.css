@@ -1,15 +1,67 @@
-.container{
-    height: 100vh;
-    background: radial-gradient(107.59% 107.59% at 50% 86.42%, #F5F5F7 0%, #BBBBBB 100%);
-display: flex;
-justify-content: center;
-align-items: center;
+.container {
+  height: 685px;
+  background: radial-gradient(
+    107.59% 107.59% at 50% 86.42%,
+    #f5f5f7 0%,
+    #bbbbbb 100%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 200px;
 }
 
-.wrapList{
-margin-left: 100px;
+.wrapList {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 100px;
 }
 
-.list{
-    list-style: none;
+.wrapList h3 {
+  font-family: "Geologica";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 20px;
+  color: #5a5a5a;
+}
+
+.wrapList ul {
+  font-family: "Geologica";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 25px;
+
+  color: #5a5a5a;
+}
+
+.list {
+  list-style: none;
+  width: 209px;
+}
+.iconContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+}
+
+.iconContainer h2 {
+  font-family: "Gunterz";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 14px;
+  letter-spacing: 2px;
+  color: #060606;
+}
+
+.iconImage {
+  width: 44px;
+  height: 44px;
+
+  background: #5a5a5a;
+  border-radius: 10px;
 }

@@ -1,6 +1,6 @@
 .container {
   position: relative;
-  height: 100vh;
+  height: 685px;
   background: radial-gradient(
     107.59% 107.59% at 50% 86.42%,
     #f5f5f7 0%,
@@ -8,14 +8,15 @@
   );
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 308px;
 }
 
-.textwrap{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.textwrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .nameIphone {
@@ -33,8 +34,8 @@
   font-size: 20px;
   line-height: 25px;
   letter-spacing: 0px;
-padding-top: 10px;
-padding-bottom: 50px;
+  padding-top: 10px;
+  padding-bottom: 50px;
   color: #5a5a5a;
 }
 
@@ -66,7 +67,6 @@ padding-bottom: 50px;
 
   width: 376px;
   height: 427px;
-
 }
 
 .imageWrapper img {

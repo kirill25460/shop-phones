@@ -1,11 +1,6 @@
 .container {
   position: relative;
   margin-top: 143px;
-  background: radial-gradient(
-    80.98% 80.98% at 50% 72.8%,
-    #040404 0%,
-    #141414 100%
-  );
   display: flex;
   align-items: center;
   justify-content: center;

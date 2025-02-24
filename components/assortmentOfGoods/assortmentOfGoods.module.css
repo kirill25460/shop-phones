@@ -1,77 +1,119 @@
-.container{
-    position: relative;
-  
-    background-color: #FFFFFF;
-    display: flex;
-    justify-content: center;
+.container {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
 }
 
 .list {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); 
-    gap: 20px; 
-    list-style: none;
-    padding: 0;
-  }
-  
-  .listItem {
-    width: 710px;
-height: 685px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    background: #f5f5f5;
-    justify-content: center;
-    position: relative;
-  }
-
-  .listItem h4{
-    margin-top:60px ;
-    font-family: "Geologica";
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 42px;
-    letter-spacing: 0%;
-
-  }
-
-.listItemAbs{
-  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+}
+/* 
+.listItem {
   width: 710px;
   height: 685px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: #f5f5f5;
+  text-align: center;
+  justify-content: center;
+  color: black;
+} */
+
+/* .listItem h4 {
+  margin-top: 60px;
+  font-family: "Geologica";
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 42px;
+  letter-spacing: 0%;
+} */
+
+.listItemAbs {
+  width: 710px;
+  height: 685px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
   text-align: center;
 }
 
-.listItemAbs h4{
-  margin-top:60px ;
+.listItemAbs h4 {
+  margin-top: 60px;
   font-family: "Geologica";
-font-weight: 700;
-font-size: 40px;
-line-height: 42px;
-letter-spacing: 0%;
-
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 42px;
+  letter-spacing: 0%;
+  color: black;
 }
 
-  .listItemBlack{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-width: 710px;
-height: 685px;
-background: radial-gradient(61.01% 269.6% at 30.21% 54.01%, #040404 0%, #141414 100%);
+.imageTop {
+  transition: transform 0.3s ease-in-out;
+  transform-origin: bottom; /* Точка трансформации – нижний край */
+}
 
-  }
+.imageBottom {
+  margin: auto 0;
+  transition: transform 0.3s ease-in-out;
+  transform-origin: bottom; /* Точка трансформации – нижний край */
+}
 
-  .imageBottom {
-  position: absolute;
-  bottom: 0;
-  }
-  
-  .imageCenter {
-    align-self: center; 
-  }
+
+
+.listItemBlack {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 710px;
+  height: 685px;
+  background: radial-gradient(
+    61.01% 269.6% at 30.21% 54.01%,
+    #040404 0%,
+    #141414 100%
+  );
+}
+
+.bottomButton {
+  width: 192px;
+  height: 45px;
+  border: none;
+  background: #0071e3;
+  box-shadow: 3px 3px 7.5px rgba(0, 0, 0, 0.25);
+  border-radius: 26px;
+  margin-top: 100px;
+}
+
+.imageBottomFirst {
+  margin-top: auto;
+  transition: transform 0.3s ease-in-out;
+  transform-origin: bottom; /* Точка трансформации – нижний край */
+}
+
+.imageBottomSecond {
+  margin-top: auto;
+  margin-bottom: 52px;
+  transition: transform 0.3s ease-in-out;
+  transform-origin: bottom; /* Точка трансформации – нижний край */
+}
+
+
+.imageTop:hover {
+  transform: scale(1.2); /* Увеличение на 20% */
+}
+
+.imageBottom:hover {
+  transform: scale(1.2); /* Увеличение на 20% */
+}
+
+.imageBottomFirst:hover {
+  transform: scale(1.1); /* Увеличение на 20% */
+}
+
+.imageBottomSecond:hover {
+  transform: scale(1.1); /* Увеличение на 20% */
+}
