@@ -18,6 +18,15 @@
   gap: 100px;
 }
 
+.title {
+  font-family: "Gunterz";
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 14px;
+  letter-spacing: 2px;
+  color: #fff;
+}
+
 .wrapList h3 {
   font-family: "Geologica";
   font-style: normal;
@@ -40,6 +49,10 @@
 .list {
   list-style: none;
   width: 209px;
+}
+
+.list li {
+  cursor: pointer;
 }
 .iconContainer {
   display: flex;

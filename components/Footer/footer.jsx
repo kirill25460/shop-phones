@@ -1,13 +1,15 @@
 import { useState } from "react";
 import styles from "./footer.module.css";
+import header_logo from "../../public/Header_Logo.webp";
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Footer() {
   return (
     <div className={styles.container}>
       <div className={styles.iconContainer}>
-        <div className={styles.iconImage}></div>
-        <h2>MOBILKA</h2>
+        <Image src={header_logo} alt="EvoMac Logo" width={91} height={40} />
+        <h2 className={styles.title}>EvoMac</h2>
       </div>
       <div className={styles.wrapList}>
         <div>

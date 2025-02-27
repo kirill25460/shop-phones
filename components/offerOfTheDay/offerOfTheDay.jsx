@@ -13,7 +13,7 @@ export default function OfferOfTheDay() {
           <br />Natural Titanium
         </h2>
         <h4 className={styles.price}>4,290.00 zł</h4>
-        <button className={styles.mainButton}>Купити</button>
+        <button className={styles.mainButton}>Придбати</button>
       </div>
       <div className={styles.imageWrapper}>
         <Image src={mainPic} alt="mainpic" width={376} height={445} priority />

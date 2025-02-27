@@ -53,13 +53,26 @@
 .mainButton {
   width: 165px;
   height: 45px;
-  border: none;
+  border: 1px solid #0071e3;
   border-radius: 26px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #ffffff;
+
+  font-family: "Geologica";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 14px;
+
+  color: #000;
+
+  background-color: transparent;
+
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.mainButton:hover {
   background-color: #0071e3;
+  color: #ffffff;
 }
 
 .imageWrapper {

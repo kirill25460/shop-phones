@@ -4,18 +4,38 @@ import { usePathname } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
 import searchIcon from "../../public/searchIcon.png";
+import searchBlackIcon from "../../public/searchBlackIcon.webp";
+import searchButIcon from "../../public/search_header_img.webp";
 import bucketIcon from "../../public/bucketIcon.png";
+import bucketBlackIcon from "../../public/bucketBlackIcon.webp";
 import burgerIcon from "../../public/burgerIcon.png";
+import burgerBlackIcon from "../../public/burgerBlackIcon.webp";
+import header_logo from "../../public/Header_Logo.webp";
+import dark_header_logo from "../../public/dark_header_logo.webp";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const [activeCategory, setActiveCategory] = useState(null);
+  const [activeSearch, setActiveSearch] = useState(false);
+  const [searchQuery, setSearchQuery] = useState("");
   const pathname = usePathname();
+
+  const handleSearchChange = (event) => {
+    setSearchQuery(event.target.value);
+  };
+
   const getTextColor = () => {
     if (pathname === "/products") return "#060606";
     if (pathname === "/cart") return "#060606";
     if (pathname.startsWith("/product/")) return "#060606";
-    return "#fff"; // 
+    return "#fff";
+  };
+
+  const getImg = () => {
+    if (pathname === "/products") return dark_header_logo;
+    if (pathname === "/cart") return dark_header_logo;
+    if (pathname.startsWith("/product/")) return dark_header_logo;
+    return header_logo;
   };
   let timeoutId;
 
@@ -27,7 +47,7 @@ export default function Header() {
   const handleMouseLeave = () => {
     timeoutId = setTimeout(() => {
       setIsOpen(false);
-      setActiveCategory(null); 
+      setActiveCategory(null);
     }, 100);
   };
 
@@ -35,12 +55,31 @@ export default function Header() {
     setActiveCategory(activeCategory === category ? null : category);
   };
 
+  const enableSearch = () => {
+    setActiveSearch((prev) => !prev);
+  };
+
+  const handleSearchSubmit = () => {
+    if (searchQuery.trim()) {
+      console.log("Отправка поиска:", searchQuery);
+      setSearchQuery("");
+    }
+  };
+
+  const handleKeyDown = (event) => {
+    if (event.key === "Enter") {
+      handleSearchSubmit();
+    }
+  };
+
   return (
     <header className={styles.container}>
       <Link href="/">
         <div className={styles.headerLogoContainer}>
-          <div className={styles.headerIcon} style={{ background: getTextColor() }}></div>
-          <h2 className={styles.title} style={{ color: getTextColor() }}>MOBILKA</h2>
+          <Image src={getImg()} alt="EvoMac Logo" width={91} height={40} />
+          <h2 className={styles.title} style={{ color: getTextColor() }}>
+            EvoMac
+          </h2>
         </div>
       </Link>
       <ul className={styles.list}>
@@ -50,75 +89,120 @@ export default function Header() {
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
           >
-            <Image style={{ color: getTextColor() }} className={styles.burgerIcon} src={burgerIcon}  alt="burgerIcon" />
-            <div className={`${styles.menu} ${isOpen ? styles.open : ""}`} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-              
-            {isOpen && (
-            <div className={styles.menu}>
-              
-              {!activeCategory && (
-                <>
-                  <div className={styles.menuItem}>
-                    <a onClick={() => toggleCategory("iphone")}>iPhone</a>
-                  </div>
-                  <div className={styles.menuItem}>
-                    <a onClick={() => toggleCategory("airpods")}>AirPods</a>
-                  </div>
-                  <div className={styles.menuItem}>
-                    <a onClick={() => toggleCategory("macbook")}>MacBook</a>
-                  </div>
-                  <div className={styles.menuItem}>
-                    <a onClick={() => toggleCategory("applewatch")}>Apple Watch</a>
-                  </div>
-                  <div className={styles.menuItem}>
-                    <a onClick={() => toggleCategory("accessories")}>Аксесуари</a>
-                  </div>
-                </>
-              )}
-              {activeCategory === "iphone" && (
-                <div className={styles.subMenu}>
-                  <h2 className={styles.ActiveCategoryText} onClick={() => setActiveCategory(null)}>iPhone</h2>
-                  <Link href="/products">Переглянути всі моделі</Link>
-                  <Link href="/products/iphone16pro">iPhone 16 Pro</Link>
-                  <Link href="/products/iphone16">iPhone 16</Link>
-                  <Link href="/products/iphone15pro">iPhone 15 Pro</Link>
+            {pathname === "/" ? (
+              <Image
+                className={styles.burgerIcon}
+                src={burgerIcon}
+                alt="burgerIcon"
+              />
+            ) : (
+              <Image
+                className={styles.burgerIcon}
+                src={burgerBlackIcon}
+                alt="burgerIcon"
+              />
+            )}
+            <div
+              className={`${styles.menu} ${isOpen ? styles.open : ""}`}
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
+            >
+              {isOpen && (
+                <div className={styles.menu}>
+                  {!activeCategory && (
+                    <>
+                      <div className={styles.menuItem}>
+                        <a onClick={() => toggleCategory("iphone")}>iPhone</a>
+                      </div>
+                      <div className={styles.menuItem}>
+                        <a onClick={() => toggleCategory("airpods")}>AirPods</a>
+                      </div>
+                      <div className={styles.menuItem}>
+                        <a onClick={() => toggleCategory("macbook")}>MacBook</a>
+                      </div>
+                      <div className={styles.menuItem}>
+                        <a onClick={() => toggleCategory("applewatch")}>
+                          Apple Watch
+                        </a>
+                      </div>
+                      <div className={styles.menuItem}>
+                        <a onClick={() => toggleCategory("accessories")}>
+                          Аксесуари
+                        </a>
+                      </div>
+                    </>
+                  )}
+                  {activeCategory === "iphone" && (
+                    <div className={styles.subMenu}>
+                      <h2
+                        className={styles.ActiveCategoryText}
+                        onClick={() => setActiveCategory(null)}
+                      >
+                        iPhone
+                      </h2>
+                      <Link href="/products">Переглянути всі моделі</Link>
+                      <Link href="/products/iphone16pro">iPhone 16 Pro</Link>
+                      <Link href="/products/iphone16">iPhone 16</Link>
+                      <Link href="/products/iphone15pro">iPhone 15 Pro</Link>
+                    </div>
+                  )}
+                  {activeCategory === "airpods" && (
+                    <div className={styles.subMenu}>
+                      <h2
+                        className={styles.ActiveCategoryText}
+                        onClick={() => setActiveCategory(null)}
+                      >
+                        AirPods
+                      </h2>
+                      <Link href="/products">Переглянути всі моделі</Link>
+                      <Link href="/products/airpodspro">AirPods Pro</Link>
+                      <Link href="/products/airpods3">AirPods 3</Link>
+                      <Link href="/products/airpods2">AirPods 2</Link>
+                    </div>
+                  )}
+                  {activeCategory === "macbook" && (
+                    <div className={styles.subMenu}>
+                      <h2
+                        className={styles.ActiveCategoryText}
+                        onClick={() => setActiveCategory(null)}
+                      >
+                        MacBook
+                      </h2>
+                      <Link href="/products">Переглянути всі моделі</Link>
+                      <Link href="/products/macbookair">MacBook Air</Link>
+                      <Link href="/products/macbookpro">MacBook Pro</Link>
+                    </div>
+                  )}
+                  {activeCategory === "applewatch" && (
+                    <div className={styles.subMenu}>
+                      <h2
+                        className={styles.ActiveCategoryText}
+                        onClick={() => setActiveCategory(null)}
+                      >
+                        Apple Watch
+                      </h2>
+                      <Link href="/products">Переглянути всі моделі</Link>
+                      <Link href="/products/applewatch8">Apple Watch 8</Link>
+                      <Link href="/products/applewatchultra">
+                        Apple Watch Ultra
+                      </Link>
+                    </div>
+                  )}
+                  {activeCategory === "accessories" && (
+                    <div className={styles.subMenu}>
+                      <h2
+                        className={styles.ActiveCategoryText}
+                        onClick={() => setActiveCategory(null)}
+                      >
+                        Аксесуари
+                      </h2>
+                      <Link href="/products">Переглянути всі моделі</Link>
+                      <Link href="/products/cases">Чохли</Link>
+                      <Link href="/products/chargers">Зарядні пристрої</Link>
+                    </div>
+                  )}
                 </div>
               )}
-              {activeCategory === "airpods" && (
-                <div className={styles.subMenu}>
-                  <h2 className={styles.ActiveCategoryText} onClick={() => setActiveCategory(null)}>AirPods</h2>
-                  <Link href="/products">Переглянути всі моделі</Link>
-                  <Link href="/products/airpodspro">AirPods Pro</Link>
-                  <Link href="/products/airpods3">AirPods 3</Link>
-                  <Link href="/products/airpods2">AirPods 2</Link>
-                </div>
-              )}
-              {activeCategory === "macbook" && (
-                <div className={styles.subMenu}>
-                  <h2 className={styles.ActiveCategoryText} onClick={() => setActiveCategory(null)}>MacBook</h2>
-                  <Link href="/products">Переглянути всі моделі</Link>
-                  <Link href="/products/macbookair">MacBook Air</Link>
-                  <Link href="/products/macbookpro">MacBook Pro</Link>
-                </div>
-              )}
-              {activeCategory === "applewatch" && (
-                <div className={styles.subMenu}>
-                  <h2 className={styles.ActiveCategoryText} onClick={() => setActiveCategory(null)}>Apple Watch</h2>
-                  <Link href="/products">Переглянути всі моделі</Link>
-                  <Link href="/products/applewatch8">Apple Watch 8</Link>
-                  <Link href="/products/applewatchultra">Apple Watch Ultra</Link>
-                </div>
-              )}
-              {activeCategory === "accessories" && (
-                <div className={styles.subMenu}>
-                  <h2 className={styles.ActiveCategoryText} onClick={() => setActiveCategory(null)}>Аксесуари</h2>
-                  <Link href="/products">Переглянути всі моделі</Link>
-                  <Link href="/products/cases">Чохли</Link>
-                  <Link href="/products/chargers">Зарядні пристрої</Link>
-                </div>
-              )}
-            </div>
-          )}
             </div>
           </div>
         </li>
@@ -128,12 +212,53 @@ export default function Header() {
         <li style={{ color: getTextColor() }}>Зв’яжісться з нами</li>
         <li style={{ color: getTextColor() }}>Трейд-ін</li>
         <li style={{ color: getTextColor() }}>Укр-Прокат</li>
-        <Image style={{ color: getTextColor() }} className={styles.searchIcon} src={searchIcon} alt="SearchIcon" />
+        {pathname === "/" ? (
+          <Image
+            className={styles.searchIcon}
+            src={searchIcon}
+            alt="SearchIcon"
+            onClick={enableSearch}
+          />
+        ) : (
+          <Image
+            className={styles.searchIcon}
+            src={searchBlackIcon}
+            alt="SearchIcon"
+            onClick={enableSearch}
+          />
+        )}
       </ul>
-      <Link href="/cart" className={styles.bucketContainer} style={{ color: getTextColor() }}>
-        <Image src={bucketIcon} alt="bucketIcon" style={{ color: getTextColor() }} />
-        <p style={{ color: getTextColor() }} >10000 zlotiv</p>
+      <Link
+        href="/cart"
+        className={styles.bucketContainer}
+        style={{ color: getTextColor() }}
+      >
+        {pathname === "/" ? (
+          <Image src={bucketIcon} alt="bucketIcon" />
+        ) : (
+          <Image src={bucketBlackIcon} alt="bucketIcon" />
+        )}
+        <p style={{ color: getTextColor() }}>10000 zlotiv</p>
       </Link>
+      {activeSearch ? (
+        <div className={styles.searchBlock}>
+          <Image
+            className={styles.searchButIcon}
+            src={searchButIcon}
+            alt="SearchIcon"
+            onClick={handleSearchSubmit}
+          />
+          <input
+            className={styles.searchInput}
+            placeholder="Пошук..."
+            value={searchQuery}
+            onChange={handleSearchChange}
+            onKeyDown={handleKeyDown}
+          />
+        </div>
+      ) : (
+        <></>
+      )}
     </header>
   );
 }

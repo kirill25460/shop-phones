@@ -63,8 +63,6 @@
   transform-origin: bottom; /* Точка трансформации – нижний край */
 }
 
-
-
 .listItemBlack {
   display: flex;
   flex-direction: column;
@@ -78,14 +76,37 @@
   );
 }
 
-.bottomButton {
-  width: 192px;
-  height: 45px;
+/* .bottomButton {
   border: none;
   background: #0071e3;
   box-shadow: 3px 3px 7.5px rgba(0, 0, 0, 0.25);
   border-radius: 26px;
+} */
+
+.bottomButton {
+  width: 192px;
+  height: 45px;
+  border: 1px solid #0071e3;
+  border-radius: 26px;
+
+  font-family: "Geologica";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 14px;
+
   margin-top: 100px;
+
+  color: #ffffff;
+
+  background-color: transparent;
+
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.bottomButton:hover {
+  background-color: #0071e3;
 }
 
 .imageBottomFirst {
@@ -100,7 +121,6 @@
   transition: transform 0.3s ease-in-out;
   transform-origin: bottom; /* Точка трансформации – нижний край */
 }
-
 
 .imageTop:hover {
   transform: scale(1.2); /* Увеличение на 20% */

@@ -14,7 +14,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-left: 100px;;
+  margin-left: 100px;
 }
 
 .nameIphone {
@@ -47,20 +47,26 @@
 }
 
 .mainButton {
-  width: 253px;
+  width: 165px;
   height: 45px;
+  border: 1px solid #0071e3;
   border-radius: 26px;
+
   font-family: "Geologica";
   font-style: normal;
   font-weight: 300;
   font-size: 15px;
   line-height: 14px;
-  border: none;
-  /* identical to box height, or 93% */
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
   color: #ffffff;
+
+  background-color: transparent;
+
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.mainButton:hover {
   background-color: #0071e3;
 }
 
