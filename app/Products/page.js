@@ -3,6 +3,7 @@ import Link from "next/link";
 
 import { useEffect, useState } from "react";
 import Header from "../../components/header/header";
+import Footer from "../../components/Footer/footer";
 import SideBarProducts from "../../components/sideBarProducts/sideBarProducts";
 import ProductsList from "../../components/Products/productsList";
 import ProductsTitle from "../../components/ProductsTitle/ProductsTitle";
@@ -16,7 +17,7 @@ export default function ProductsPage() {
       .then((data) => setProducts(data));
   }, []);
 
-  return (
+  return (<>
     <div className={styles.container}>
       <Header />
       <ProductsTitle />
@@ -33,5 +34,7 @@ export default function ProductsPage() {
         </ul>
       </div>
     </div>
+    <Footer />
+    </>
   );
 }

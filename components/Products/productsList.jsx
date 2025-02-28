@@ -1,13 +1,11 @@
 import Image from "next/image";
 import { useState, useRef, useEffect } from "react";
-
 import styles from "./products.module.css";
-import { useCart } from "../cart/CartContext";
 import VanillaTilt from "vanilla-tilt";
 
 export default function ProductsList({ product }) {
   const tiltRef = useRef(null);
-  const { addToCart } = useCart();
+
   const [selectedVariant, setSelectedVariant] = useState(
     product?.variants?.[0] || {}
   );
@@ -33,13 +31,11 @@ export default function ProductsList({ product }) {
   return (
     
       <div
-      
         className={styles.Card}
         ref={tiltRef}
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
-        
           <Image
             className={styles.ProductImage}
             src={selectedVariant.image || product.image}
@@ -47,8 +43,6 @@ export default function ProductsList({ product }) {
             width={92}
             height={109}
           />
-          
-     
         <div className={styles.ProductInfo}>
           <h3 className={styles.ProductTitle}>{product.name}</h3>
           <p className={styles.ProductPrice}>${product.price}</p>
@@ -92,12 +86,6 @@ export default function ProductsList({ product }) {
               />
             ))}
           </div>
-          <button
-            className={styles.AddToCartButton}
-            onClick={() => addToCart(product, selectedVariant)}
-          >
-            Add to Cart
-          </button>
         </div>
       
       </div>

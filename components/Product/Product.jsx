@@ -1,10 +1,16 @@
 import Image from "next/image";
+import { useState, useRef, useEffect } from "react";
 import styles from "./Product.module.css";
+import { useCart } from "../cart/CartContext";
 import mainPic from "../../public/offerOfTheDayPic.png";
 import RearView from "../../public/iPhone15RearView.png";
 import Link from "next/link";
 
 export default function Product({ product }) {
+  const { addToCart } = useCart();
+    const [selectedVariant, setSelectedVariant] = useState(
+      product?.variants?.[0] || {}
+    );
   return (
     <div className={styles.container}>
       <div className={styles.wrap}>
@@ -15,8 +21,10 @@ export default function Product({ product }) {
           <ul className={styles.list}>
             <li>
               <p className={styles.info}>
-                <span className={styles.span}>Stan:</span>Telefon, który otrzymasz, jest<span className={styles.span}>nie aktywowany</span> 
-                i posiada 12 miesięcy oficjalnej gwarancji.
+                <span className={styles.span}>Stan:</span>Telefon, który
+                otrzymasz, jest
+                <span className={styles.span}>nie aktywowany</span>i posiada 12
+                miesięcy oficjalnej gwarancji.
               </p>
             </li>
             <li>
@@ -44,7 +52,12 @@ export default function Product({ product }) {
           <div className={styles.buyWrap}>
             {" "}
             <p>${product.price}</p>
-            <button className={styles.buyButton}>Купити</button>
+            <button
+              className={styles.buyButton}
+              onClick={() => addToCart(product, selectedVariant)}
+            >
+              Купити
+            </button>
           </div>
         </div>
       </div>
