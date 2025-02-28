@@ -43,6 +43,317 @@
           { "color": "#6b16bf", "image": "/iphone-14-pro-deep-purple.png", "colorName":"Deep-purple" },
           { "color": "#c0c0c0", "image": "/14roSilver.png", "colorName":"Silver" }
     ]
-      }
+      },   {
+        "id": 4,
+        "name": "iPhone 14 Pro",
+        "price": 999,
+        "screenSize":6.3, 
+        "memory":"256GB",
+        "processor":"Apple A18 Pro",
+        "camera":"48 Мп + 48 Мп + 12 Мп",
+        "batteryCapacity":"3577 мАч",
+        "variants": [
+          { "color": "#1C1C1E", "image": "/iphone14pro-black.png", "colorName":"Black" },
+          { "color": "#6b16bf", "image": "/iphone-14-pro-deep-purple.png", "colorName":"Deep-purple" },
+          { "color": "#c0c0c0", "image": "/14roSilver.png", "colorName":"Silver" }
+        ]
+      },
+      {
+          "id": 5,
+          "name": "iPhone 15 Pro",
+          "price": 999,
+          "screenSize":6.3, 
+          "memmorySize":"256GB",
+          "processor":"Apple A18 Pro",
+          "camera":"48 Мп + 48 Мп + 12 Мп",
+        "batteryCapacity":"3577 мАч",
+          "variants": [
+            { "color": "#1C1C1E", "image": "/iphone14pro-black.png", "colorName":"Black" },
+            { "color": "#6b16bf", "image": "/iphone-14-pro-deep-purple.png", "colorName":"Deep-purple" },
+            { "color": "#c0c0c0", "image": "/14roSilver.png", "colorName":"Silver" }
+            ]
+        },
+        {
+          "id": 6,
+          "name": "iPhone 16 Pro",
+          "price": 999,
+          "screenSize":6.3, 
+          "memmorySize":"256GB",
+          "processor":"Apple A18 Pro",
+          "camera":"48 Мп + 48 Мп + 12 Мп",
+        "batteryCapacity":"3577 мАч",
+          "variants": [
+            { "color": "#1C1C1E", "image": "/iphone14pro-black.png", "colorName":"Black" },
+            { "color": "#6b16bf", "image": "/iphone-14-pro-deep-purple.png", "colorName":"Deep-purple" },
+            { "color": "#c0c0c0", "image": "/14roSilver.png", "colorName":"Silver" }
+      ]
+        },
+        {
+          "id": 7,
+          "name": "iPhone 14 Pro",
+          "price": 999,
+          "screenSize":6.3, 
+          "memory":"256GB",
+          "processor":"Apple A18 Pro",
+          "camera":"48 Мп + 48 Мп + 12 Мп",
+          "batteryCapacity":"3577 мАч",
+          "variants": [
+            { "color": "#1C1C1E", "image": "/iphone14pro-black.png", "colorName":"Black" },
+            { "color": "#6b16bf", "image": "/iphone-14-pro-deep-purple.png", "colorName":"Deep-purple" },
+            { "color": "#c0c0c0", "image": "/14roSilver.png", "colorName":"Silver" }
+          ]
+        },
+        {
+            "id": 8,
+            "name": "iPhone 15 Pro",
+            "price": 999,
+            "screenSize":6.3, 
+            "memmorySize":"256GB",
+            "processor":"Apple A18 Pro",
+            "camera":"48 Мп + 48 Мп + 12 Мп",
+          "batteryCapacity":"3577 мАч",
+            "variants": [
+              { "color": "#1C1C1E", "image": "/iphone14pro-black.png", "colorName":"Black" },
+              { "color": "#6b16bf", "image": "/iphone-14-pro-deep-purple.png", "colorName":"Deep-purple" },
+              { "color": "#c0c0c0", "image": "/14roSilver.png", "colorName":"Silver" }
+              ]
+          },
+          {
+            "id": 9,
+            "name": "iPhone 16 Pro",
+            "price": 999,
+            "screenSize":6.3, 
+            "memmorySize":"256GB",
+            "processor":"Apple A18 Pro",
+            "camera":"48 Мп + 48 Мп + 12 Мп",
+          "batteryCapacity":"3577 мАч",
+            "variants": [
+              { "color": "#1C1C1E", "image": "/iphone14pro-black.png", "colorName":"Black" },
+              { "color": "#6b16bf", "image": "/iphone-14-pro-deep-purple.png", "colorName":"Deep-purple" },
+              { "color": "#c0c0c0", "image": "/14roSilver.png", "colorName":"Silver" }
+        ]
+          },   {
+            "id": 10,
+            "name": "iPhone 14 Pro",
+            "price": 999,
+            "screenSize":6.3, 
+            "memory":"256GB",
+            "processor":"Apple A18 Pro",
+            "camera":"48 Мп + 48 Мп + 12 Мп",
+            "batteryCapacity":"3577 мАч",
+            "variants": [
+              { "color": "#1C1C1E", "image": "/iphone14pro-black.png", "colorName":"Black" },
+              { "color": "#6b16bf", "image": "/iphone-14-pro-deep-purple.png", "colorName":"Deep-purple" },
+              { "color": "#c0c0c0", "image": "/14roSilver.png", "colorName":"Silver" }
+            ]
+          },
+          {
+              "id": 11,
+              "name": "iPhone 15 Pro",
+              "price": 999,
+              "screenSize":6.3, 
+              "memmorySize":"256GB",
+              "processor":"Apple A18 Pro",
+              "camera":"48 Мп + 48 Мп + 12 Мп",
+            "batteryCapacity":"3577 мАч",
+              "variants": [
+                { "color": "#1C1C1E", "image": "/iphone14pro-black.png", "colorName":"Black" },
+                { "color": "#6b16bf", "image": "/iphone-14-pro-deep-purple.png", "colorName":"Deep-purple" },
+                { "color": "#c0c0c0", "image": "/14roSilver.png", "colorName":"Silver" }
+                ]
+            },
+            {
+              "id": 12,
+              "name": "iPhone 16 Pro",
+              "price": 999,
+              "screenSize":6.3, 
+              "memmorySize":"256GB",
+              "processor":"Apple A18 Pro",
+              "camera":"48 Мп + 48 Мп + 12 Мп",
+            "batteryCapacity":"3577 мАч",
+              "variants": [
+                { "color": "#1C1C1E", "image": "/iphone14pro-black.png", "colorName":"Black" },
+                { "color": "#6b16bf", "image": "/iphone-14-pro-deep-purple.png", "colorName":"Deep-purple" },
+                { "color": "#c0c0c0", "image": "/14roSilver.png", "colorName":"Silver" }
+          ]
+            },
+            {
+              "id": 13,
+              "name": "iPhone 14 Pro",
+              "price": 999,
+              "screenSize":6.3, 
+              "memory":"256GB",
+              "processor":"Apple A18 Pro",
+              "camera":"48 Мп + 48 Мп + 12 Мп",
+              "batteryCapacity":"3577 мАч",
+              "variants": [
+                { "color": "#1C1C1E", "image": "/iphone14pro-black.png", "colorName":"Black" },
+                { "color": "#6b16bf", "image": "/iphone-14-pro-deep-purple.png", "colorName":"Deep-purple" },
+                { "color": "#c0c0c0", "image": "/14roSilver.png", "colorName":"Silver" }
+              ]
+            },
+            {
+                "id": 14,
+                "name": "iPhone 15 Pro",
+                "price": 999,
+                "screenSize":6.3, 
+                "memmorySize":"256GB",
+                "processor":"Apple A18 Pro",
+                "camera":"48 Мп + 48 Мп + 12 Мп",
+              "batteryCapacity":"3577 мАч",
+                "variants": [
+                  { "color": "#1C1C1E", "image": "/iphone14pro-black.png", "colorName":"Black" },
+                  { "color": "#6b16bf", "image": "/iphone-14-pro-deep-purple.png", "colorName":"Deep-purple" },
+                  { "color": "#c0c0c0", "image": "/14roSilver.png", "colorName":"Silver" }
+                  ]
+              },
+              {
+                "id": 15,
+                "name": "iPhone 16 Pro",
+                "price": 999,
+                "screenSize":6.3, 
+                "memmorySize":"256GB",
+                "processor":"Apple A18 Pro",
+                "camera":"48 Мп + 48 Мп + 12 Мп",
+              "batteryCapacity":"3577 мАч",
+                "variants": [
+                  { "color": "#1C1C1E", "image": "/iphone14pro-black.png", "colorName":"Black" },
+                  { "color": "#6b16bf", "image": "/iphone-14-pro-deep-purple.png", "colorName":"Deep-purple" },
+                  { "color": "#c0c0c0", "image": "/14roSilver.png", "colorName":"Silver" }
+            ]
+              },   {
+                "id": 16,
+                "name": "iPhone 14 Pro",
+                "price": 999,
+                "screenSize":6.3, 
+                "memory":"256GB",
+                "processor":"Apple A18 Pro",
+                "camera":"48 Мп + 48 Мп + 12 Мп",
+                "batteryCapacity":"3577 мАч",
+                "variants": [
+                  { "color": "#1C1C1E", "image": "/iphone14pro-black.png", "colorName":"Black" },
+                  { "color": "#6b16bf", "image": "/iphone-14-pro-deep-purple.png", "colorName":"Deep-purple" },
+                  { "color": "#c0c0c0", "image": "/14roSilver.png", "colorName":"Silver" }
+                ]
+              },
+              {
+                  "id": 17,
+                  "name": "iPhone 15 Pro",
+                  "price": 999,
+                  "screenSize":6.3, 
+                  "memmorySize":"256GB",
+                  "processor":"Apple A18 Pro",
+                  "camera":"48 Мп + 48 Мп + 12 Мп",
+                "batteryCapacity":"3577 мАч",
+                  "variants": [
+                    { "color": "#1C1C1E", "image": "/iphone14pro-black.png", "colorName":"Black" },
+                    { "color": "#6b16bf", "image": "/iphone-14-pro-deep-purple.png", "colorName":"Deep-purple" },
+                    { "color": "#c0c0c0", "image": "/14roSilver.png", "colorName":"Silver" }
+                    ]
+                },
+                {
+                  "id": 18,
+                  "name": "iPhone 16 Pro",
+                  "price": 999,
+                  "screenSize":6.3, 
+                  "memmorySize":"256GB",
+                  "processor":"Apple A18 Pro",
+                  "camera":"48 Мп + 48 Мп + 12 Мп",
+                "batteryCapacity":"3577 мАч",
+                  "variants": [
+                    { "color": "#1C1C1E", "image": "/iphone14pro-black.png", "colorName":"Black" },
+                    { "color": "#6b16bf", "image": "/iphone-14-pro-deep-purple.png", "colorName":"Deep-purple" },
+                    { "color": "#c0c0c0", "image": "/14roSilver.png", "colorName":"Silver" }
+              ]
+                },
+                {
+                  "id": 19,
+                  "name": "iPhone 14 Pro",
+                  "price": 999,
+                  "screenSize":6.3, 
+                  "memory":"256GB",
+                  "processor":"Apple A18 Pro",
+                  "camera":"48 Мп + 48 Мп + 12 Мп",
+                  "batteryCapacity":"3577 мАч",
+                  "variants": [
+                    { "color": "#1C1C1E", "image": "/iphone14pro-black.png", "colorName":"Black" },
+                    { "color": "#6b16bf", "image": "/iphone-14-pro-deep-purple.png", "colorName":"Deep-purple" },
+                    { "color": "#c0c0c0", "image": "/14roSilver.png", "colorName":"Silver" }
+                  ]
+                },
+                {
+                    "id": 20,
+                    "name": "iPhone 15 Pro",
+                    "price": 999,
+                    "screenSize":6.3, 
+                    "memmorySize":"256GB",
+                    "processor":"Apple A18 Pro",
+                    "camera":"48 Мп + 48 Мп + 12 Мп",
+                  "batteryCapacity":"3577 мАч",
+                    "variants": [
+                      { "color": "#1C1C1E", "image": "/iphone14pro-black.png", "colorName":"Black" },
+                      { "color": "#6b16bf", "image": "/iphone-14-pro-deep-purple.png", "colorName":"Deep-purple" },
+                      { "color": "#c0c0c0", "image": "/14roSilver.png", "colorName":"Silver" }
+                      ]
+                  },
+                  {
+                    "id": 21,
+                    "name": "iPhone 16 Pro",
+                    "price": 999,
+                    "screenSize":6.3, 
+                    "memmorySize":"256GB",
+                    "processor":"Apple A18 Pro",
+                    "camera":"48 Мп + 48 Мп + 12 Мп",
+                  "batteryCapacity":"3577 мАч",
+                    "variants": [
+                      { "color": "#1C1C1E", "image": "/iphone14pro-black.png", "colorName":"Black" },
+                      { "color": "#6b16bf", "image": "/iphone-14-pro-deep-purple.png", "colorName":"Deep-purple" },
+                      { "color": "#c0c0c0", "image": "/14roSilver.png", "colorName":"Silver" }
+                ]
+                  },   {
+                    "id": 22,
+                    "name": "iPhone 14 Pro",
+                    "price": 999,
+                    "screenSize":6.3, 
+                    "memory":"256GB",
+                    "processor":"Apple A18 Pro",
+                    "camera":"48 Мп + 48 Мп + 12 Мп",
+                    "batteryCapacity":"3577 мАч",
+                    "variants": [
+                      { "color": "#1C1C1E", "image": "/iphone14pro-black.png", "colorName":"Black" },
+                      { "color": "#6b16bf", "image": "/iphone-14-pro-deep-purple.png", "colorName":"Deep-purple" },
+                      { "color": "#c0c0c0", "image": "/14roSilver.png", "colorName":"Silver" }
+                    ]
+                  },
+                  {
+                      "id": 23,
+                      "name": "iPhone 15 Pro",
+                      "price": 999,
+                      "screenSize":6.3, 
+                      "memmorySize":"256GB",
+                      "processor":"Apple A18 Pro",
+                      "camera":"48 Мп + 48 Мп + 12 Мп",
+                    "batteryCapacity":"3577 мАч",
+                      "variants": [
+                        { "color": "#1C1C1E", "image": "/iphone14pro-black.png", "colorName":"Black" },
+                        { "color": "#6b16bf", "image": "/iphone-14-pro-deep-purple.png", "colorName":"Deep-purple" },
+                        { "color": "#c0c0c0", "image": "/14roSilver.png", "colorName":"Silver" }
+                        ]
+                    },
+                    {
+                      "id": 24,
+                      "name": "iPhone 16 Pro",
+                      "price": 999,
+                      "screenSize":6.3, 
+                      "memmorySize":"256GB",
+                      "processor":"Apple A18 Pro",
+                      "camera":"48 Мп + 48 Мп + 12 Мп",
+                    "batteryCapacity":"3577 мАч",
+                      "variants": [
+                        { "color": "#1C1C1E", "image": "/iphone14pro-black.png", "colorName":"Black" },
+                        { "color": "#6b16bf", "image": "/iphone-14-pro-deep-purple.png", "colorName":"Deep-purple" },
+                        { "color": "#c0c0c0", "image": "/14roSilver.png", "colorName":"Silver" }
+                  ]
+                    }
   ]
   
