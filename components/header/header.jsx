@@ -25,13 +25,18 @@ export default function Header() {
   };
 
   const getTextColor = () => {
+    if (pathname === "/checkIMEI") return "#060606";
+    if (pathname === "/guarantees") return "#060606";
     if (pathname === "/products") return "#060606";
     if (pathname === "/cart") return "#060606";
     if (pathname.startsWith("/product/")) return "#060606";
+    
     return "#fff";
   };
 
   const getImg = () => {
+    if (pathname === "/checkIMEI") return dark_header_logo;
+    if (pathname === "/guarantees") return dark_header_logo;
     if (pathname === "/products") return dark_header_logo;
     if (pathname === "/cart") return dark_header_logo;
     if (pathname.startsWith("/product/")) return dark_header_logo;
@@ -206,12 +211,11 @@ export default function Header() {
             </div>
           </div>
         </li>
-        <li style={{ color: getTextColor() }}>Гарантії</li>
-        <li style={{ color: getTextColor() }}>Перевірка IMEI</li>
-        <li style={{ color: getTextColor() }}>Про нас</li>
-        <li style={{ color: getTextColor() }}>Зв’яжісться з нами</li>
-        <li style={{ color: getTextColor() }}>Трейд-ін</li>
-        <li style={{ color: getTextColor() }}>Укр-Прокат</li>
+        <li style={{ color: getTextColor() }}> <Link href='/guarantees'>Гарантії</Link></li>
+        <li style={{ color: getTextColor() }}><Link href='/checkIMEI'>Перевірка IMEI</Link></li>
+        <li style={{ color: getTextColor() }}><Link href='/about_us'>Про нас</Link></li>
+        <li style={{ color: getTextColor() }}><Link href='/guarantees'>Зв’яжісться з нами</Link></li>
+        <li style={{ color: getTextColor() }}><Link href='/guarantees'>Трейд-ін</Link></li>
         {pathname === "/" ? (
           <Image
             className={styles.searchIcon}

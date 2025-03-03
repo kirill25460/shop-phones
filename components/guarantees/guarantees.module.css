@@ -5,8 +5,19 @@
     padding-bottom: 100px;
     padding-top: 65px;
 }
+.title{
+font-family: 'Geologica';
+font-style: normal;
+font-weight: 600;
+font-size: 40px;
+color: #060606;
+margin: 50px;
+
+}
 .textwrap {
-margin-top: 50px;
+
+padding: 50px;
+padding-left: 70px;
     height: 1660px;
   width: 1240px;
   background: #ffffff;
@@ -19,11 +30,74 @@ margin-top: 50px;
 }
 
 .textwrap2{
-    margin-top: 40px;
-    height: 1261px;
+margin-top: 40px;
+padding: 50px;
+height: 1261px;
 width: 1240px;
 background: #FFFFFF;
 box-shadow: 0px 0.747512px 1.49502px rgba(0, 0, 0, 0.3), 0px 0.747512px 2.24254px 0.747512px rgba(0, 0, 0, 0.15);
 border-radius: 22.4254px;
-
 }
+
+.text{
+font-family: 'Geologica';
+font-style: normal;
+font-weight: 300;
+font-size: 20px;
+line-height: 40px;
+letter-spacing: 0.01em;
+color: #060606;
+}
+
+.List li:not(:last-child){
+margin-bottom: 40px;
+}
+
+.smallText{
+  font-family: 'Geologica';
+font-style: normal;
+font-weight: 100;
+font-size: 20px;
+line-height: 40px;
+letter-spacing: 0.01em;
+
+color: #060606;
+margin-bottom: 40px;
+}
+.textSpan{
+  font-family: 'Geologica';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 40px;
+  letter-spacing: 0.01em;
+
+  color: #060606;
+}
+
+.List2{list-style: none;}
+.List2 li:last-child {
+  margin-bottom: 50px;
+}
+
+.titleServices{
+font-family: 'Geologica';
+font-style: normal;
+font-weight: 600;
+font-size: 25px;
+line-height: 40px;
+/* or 160% */
+letter-spacing: 0.01em;
+color: #060606;
+}
+.titlePocket{  
+  font-family: 'Geologica';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 40px;
+  /* or 200% */
+  letter-spacing: 0.01em;
+  color: #060606;
+margin-bottom: 40px;
+  }

@@ -1,0 +1,102 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 100px;
+    padding-top: 65px;
+}
+.title{
+    font-family: 'Geologica';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    color: #060606;
+    margin-bottom: 50px;
+    }
+.wrap1{
+width: 1240px;
+height: 590px;
+background: #FFFFFF;
+box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3), 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+border-radius: 40px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.wrap2{
+width: 1240px;
+min-height: 590px;
+margin-top: 50px;
+background: #FFFFFF;
+box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3), 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+border-radius: 40px;
+padding: 50px;
+}
+.textWrap{
+    width: 610px; 
+    margin-right: 100px;
+}
+.checkIphone{
+    font-family: 'Geologica';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 29px;
+    color: #060606;
+    
+    }
+.textIMEI{
+    font-family: 'Geologica';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px; 
+    color: #060606;
+    margin-top:30px;
+    margin-bottom: 80px;
+    }
+
+.buttonwrap{
+    display: flex;
+    align-items: center;
+justify-content: space-between;
+}
+.checkbutton{
+width: 165px;
+height: 45px;
+box-sizing: border-box;
+border: 1px solid #0071E3;
+filter: drop-shadow(3px 3px 7.5px rgba(0, 0, 0, 0.25));
+border-radius: 26px;
+font-family: 'Geologica';
+font-style: normal;
+font-weight: 300;
+font-size: 15px;
+line-height: 14px;
+display: flex;
+align-items: center;
+justify-content: center;
+color: #060606;
+cursor: pointer;
+}
+
+.infoButton{
+    font-family: 'Geologica';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+background: transparent;
+border: none;
+    display: flex;
+    align-items: center;
+    color: #060606;
+    margin-top: 40px;
+    margin-bottom: 45px;
+    }
+
+.buttonWrap{
+display: flex;
+justify-content: space-between;
+}

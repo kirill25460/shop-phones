@@ -6,7 +6,7 @@ import "./globals.css";
 const geologica = Geologica({
   variable: "--font-geologica",
   subsets: ["latin"],
-  weight: ["300", "500", "700"], 
+  weight: ["100","300","400", "500","600", "700"], 
 });
 
 const geistSans = Geist({

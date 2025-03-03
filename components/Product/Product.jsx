@@ -2,7 +2,7 @@ import Image from "next/image";
 import { useState, useRef, useEffect } from "react";
 import styles from "./Product.module.css";
 import { useCart } from "../cart/CartContext";
-import mainPic from "../../public/offerOfTheDayPic.png";
+import mainPic from "../../public/offerOfTheDayPic.webp";
 import RearView from "../../public/iPhone15RearView.png";
 import Link from "next/link";
 

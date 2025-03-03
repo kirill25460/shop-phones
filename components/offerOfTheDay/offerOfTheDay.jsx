@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styles from "./offerOfTheDay.module.css";
 
-import mainPic from "../../public/offerOfTheDayPic.png";
+import mainPic from "../../public/offerOfTheDayPic.webp";
 
 export default function OfferOfTheDay() {
   return (
