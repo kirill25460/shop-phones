@@ -1,0 +1,78 @@
+.containerOurValues {
+  margin-top: 50px;
+}
+
+.mainText {
+  font-family: "Geologica";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+
+  color: #060606;
+
+  margin: 0 auto;
+
+  text-align: center;
+}
+
+.ourValuesList {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 47px;
+
+  margin-top: 40px;
+
+  list-style: none;
+}
+
+.ourValuesItem {
+  width: 275px;
+  height: 265px;
+
+  padding-top: 20px;
+
+  background: #ffffff;
+  box-shadow: 0px 1.00683px 2.01366px rgba(0, 0, 0, 0.3),
+    0px 1.00683px 3.02049px 1.00683px rgba(0, 0, 0, 0.15);
+  border-radius: 40px;
+}
+
+.itemMainText {
+  font-family: "Geologica";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+
+  color: #ffffff;
+
+  width: 253px;
+  height: 50px;
+
+  margin: 0 auto;
+
+  background: #0071e3;
+  border-radius: 26px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.itemText {
+  width: 175px;
+
+  font-family: "Geologica";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 30px;
+
+  color: #060606;
+
+  text-align: center;
+
+  margin: 20px auto;
+}
