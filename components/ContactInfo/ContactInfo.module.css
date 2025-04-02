@@ -1,0 +1,146 @@
+.containerContactInfo {
+  margin-top: 113px;
+}
+
+.mainText {
+  font-family: "Geologica";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 35px;
+
+  color: #060606;
+
+  text-align: center;
+
+  margin-bottom: 70px;
+}
+
+.infoBlock {
+  width: 1240px;
+  height: 653px;
+
+  background: #ffffff;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3),
+    0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+  border-radius: 40px;
+
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.infoBlockItem {
+  display: flex;
+  align-items: baseline;
+  flex-direction: column;
+}
+
+.mainTextBlock {
+  font-family: "Geologica";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 30px;
+
+  color: #060606;
+}
+
+.navMainText {
+  font-family: "Geologica";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 25px;
+
+  color: #060606;
+
+  text-align: center;
+
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+
+.navText {
+  font-family: "Geologica";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+
+  color: #060606;
+
+  text-align: center;
+
+  margin-top: 0;
+}
+
+.consultationBlock {
+  width: 711px;
+  height: 533px;
+
+  background: #ffffff;
+  box-shadow: 0px 4px 8px 3px rgba(0, 0, 0, 0.15),
+    0px 1px 3px rgba(0, 0, 0, 0.3);
+  border-radius: 40px;
+
+  margin-left: 77px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.nameTextItem {
+  font-family: "Geologica";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 19px;
+
+  color: #060606;
+
+  margin-bottom: 120px;
+}
+
+.questionBlock {
+  width: 591px;
+  height: 127px;
+
+  background: #f7f7f7;
+  box-shadow: 0px 4px 8px 3px rgba(0, 0, 0, 0.15),
+    0px 1px 3px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+}
+
+.questionItem {
+  font-family: "Geologica";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14.2395px;
+  line-height: 19px;
+
+  color: #060606;
+
+  opacity: 0.7;
+}
+
+.questionIcon {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+
+  color: black;
+
+  bottom: 10px;
+  right: 10px;
+}

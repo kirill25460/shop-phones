@@ -2,13 +2,16 @@
 
 import Header from "../../components/header/header";
 import Footer from "../../components/Footer/footer";
-import Guarantees from "../../components/guarantees/guarantees";
 import styles from "./page.module.css";
-export default function GuaranteesPage() {
+import ContactInfo from "@/components/ContactInfo/ContactInfo";
+import ContactForm from "@/components/ContactForm/ContactForm";
+
+export default function ContactUs() {
   return (
     <div className={styles.container}>
       <Header />
-      <Guarantees />
+      <ContactInfo />
+      <ContactForm />
       <Footer />
     </div>
   );
