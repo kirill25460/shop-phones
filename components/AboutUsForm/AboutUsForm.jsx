@@ -25,24 +25,23 @@ export default function AboutUsForm() {
               type="text"
               placeholder="Аркадій"
             />
-            <label className={styles.labelForm} htmlFor="secondname">
-              Номер телефону
-            </label>
-            <input
-              className={styles.input}
-              id="secondname"
-              name="secondname"
-              type="text"
-              placeholder="Понторезович"
-            />
             <label className={styles.labelForm} htmlFor="number">
-              Електронна пошта
+              Номер телефону
             </label>
             <input
               className={styles.input}
               id="number"
               name="number"
               placeholder="+380 041 540 4407"
+            />
+            <label className={styles.labelForm} htmlFor="email">
+              Електронна пошта
+            </label>
+            <input
+              className={styles.input}
+              id="email"
+              name="email"
+              placeholder="arcasha2basha@gmail.com"
             />
           </form>
           <button className={styles.buttonForm}>Залишити заявку</button>
