@@ -33,6 +33,7 @@ export default function Header() {
     if (pathname === "/cart") return "#060606";
     if (pathname === "/about_us") return "#060606";
     if (pathname === "/contactUs") return "#060606";
+    if (pathname === "/tradeIn") return "#060606";
     if (pathname.startsWith("/product/")) return "#060606";
 
     return "#fff";
@@ -45,6 +46,7 @@ export default function Header() {
     if (pathname === "/cart") return dark_header_logo;
     if (pathname === "/about_us") return dark_header_logo;
     if (pathname === "/contactUs") return dark_header_logo;
+    if (pathname === "/tradeIn") return dark_header_logo;
     if (pathname.startsWith("/product/")) return dark_header_logo;
     return header_logo;
   };
@@ -246,7 +248,7 @@ export default function Header() {
           <Link href="/contactUs">Зв’яжісться з нами</Link>
         </li>
         <li style={{ color: getTextColor() }}>
-          <Link href="/guarantees">Трейд-ін</Link>
+          <Link href="/tradeIn">Трейд-ін</Link>
         </li>
         {pathname === "/" ? (
           <Image
