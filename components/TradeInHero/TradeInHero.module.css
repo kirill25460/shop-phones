@@ -1,0 +1,66 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 69px;
+  margin-bottom: 40px;
+}
+
+.mainText {
+  font-family: "Geologica";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 35px;
+
+  text-align: center;
+
+  color: #060606;
+
+  margin-bottom: 40px;
+}
+
+.mainItemText {
+  width: 1067px;
+
+  font-family: "Geologica";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 30px;
+
+  text-align: center;
+
+  color: #060606;
+
+  margin-bottom: 49px;
+}
+
+.imgBlock {
+  width: 1239px;
+  height: 474px;
+
+  background: #ffffff;
+  border-radius: 40px;
+
+  margin: 0 auto;
+
+  position: relative;
+}
+
+.imgHeroItem {
+  position: absolute;
+
+  width: 1240px;
+  height: 476px;
+}
+
+.imgLogo {
+  position: absolute;
+
+  width: 91px;
+  height: 40px;
+  bottom: 50px;
+  left: 46%;
+}
