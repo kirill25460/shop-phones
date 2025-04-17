@@ -170,9 +170,9 @@ export default function Header() {
                       iPhone
                     </h2>
                     <Link href="/products">Переглянути всі моделі</Link>
-                    <Link href="/products/iphone16pro">iPhone 16 Pro</Link>
-                    <Link href="/products/iphone16">iPhone 16</Link>
-                    <Link href="/products/iphone15pro">iPhone 15 Pro</Link>
+                    <Link href="/products">iPhone 16 Pro</Link>
+                    <Link href="/products">iPhone 16</Link>
+                    <Link href="/products">iPhone 15 Pro</Link>
                   </div>
                 )}
                 {activeCategory === "airpods" && (
@@ -184,9 +184,9 @@ export default function Header() {
                       AirPods
                     </h2>
                     <Link href="/products">Переглянути всі моделі</Link>
-                    <Link href="/products/airpodspro">AirPods Pro</Link>
-                    <Link href="/products/airpods3">AirPods 3</Link>
-                    <Link href="/products/airpods2">AirPods 2</Link>
+                    <Link href="/products">AirPods Pro</Link>
+                    <Link href="/products">AirPods 3</Link>
+                    <Link href="/products">AirPods 2</Link>
                   </div>
                 )}
                 {activeCategory === "macbook" && (
@@ -198,8 +198,8 @@ export default function Header() {
                       MacBook
                     </h2>
                     <Link href="/products">Переглянути всі моделі</Link>
-                    <Link href="/products/macbookair">MacBook Air</Link>
-                    <Link href="/products/macbookpro">MacBook Pro</Link>
+                    <Link href="/products">MacBook Air</Link>
+                    <Link href="/products">MacBook Pro</Link>
                   </div>
                 )}
                 {activeCategory === "applewatch" && (
@@ -211,8 +211,8 @@ export default function Header() {
                       Apple Watch
                     </h2>
                     <Link href="/products">Переглянути всі моделі</Link>
-                    <Link href="/products/applewatch8">Apple Watch 8</Link>
-                    <Link href="/products/applewatchultra">
+                    <Link href="/products">Apple Watch 8</Link>
+                    <Link href="/products">
                       Apple Watch Ultra
                     </Link>
                   </div>
@@ -226,8 +226,8 @@ export default function Header() {
                       Аксесуари
                     </h2>
                     <Link href="/products">Переглянути всі моделі</Link>
-                    <Link href="/products/cases">Чохли</Link>
-                    <Link href="/products/chargers">Зарядні пристрої</Link>
+                    <Link href="/products">Чохли</Link>
+                    <Link href="/products">Зарядні пристрої</Link>
                   </div>
                 )}
               </div>

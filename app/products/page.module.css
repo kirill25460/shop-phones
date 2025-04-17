@@ -1,28 +1,4 @@
 .container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+   
     background-color: #BBBBBB;
-}
-
-.containerProducts{
-    display: flex;
-    padding-bottom: 100px;
-}
-
-.containerList{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 столбца */
-    gap: 32px;
-    margin-left: 40px;
-    list-style: none;
-    padding: 0;
-    align-items: start;
-    overflow: hidden;
-}
-
-.productItem {
-    height: 231px;
-    width: 182px;
 }

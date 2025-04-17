@@ -9,6 +9,13 @@
 
 .phoneImage {
   margin-bottom: -4px;
+  transition: transform 0.3s ease;
+
+  cursor: pointer;
+}
+
+.phoneImage:hover {
+  transform: scale(1.2);
 }
 
 .nameIphone {
@@ -76,8 +83,6 @@
 
   cursor: pointer;
 }
-
-
 
 /* 
 .imageWrapper {
