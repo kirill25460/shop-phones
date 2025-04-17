@@ -1,0 +1,118 @@
+.productInfoConteiner {
+  margin-top: 100px;
+  margin-bottom: 100px;
+
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.productInfoBlock {
+  width: 1240px;
+  height: 645px;
+
+  background: #ffffff;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3),
+    0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+  border-radius: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 160px;
+
+  margin: 0 auto;
+}
+
+.productImg {
+  width: 376px;
+  height: 445px;
+}
+
+.infoBlockItem {
+}
+
+.productName {
+  font-family: "Geologica";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 25px;
+  line-height: 25px;
+
+  color: #060606;
+}
+
+.productMaterial {
+  font-family: "Geologica";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 25px;
+
+  color: #5a5a5a;
+
+  margin-bottom: 40px;
+}
+
+.productList {
+  width: 454px;
+
+  list-style: none;
+
+  margin-bottom: 39px;
+}
+
+.productItem {
+  font-family: "Geologica";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 25px;
+
+  color: #5a5a5a;
+}
+
+.productSpan {
+  font-family: "Geologica";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 25px;
+
+  color: #5a5a5a;
+}
+
+.priceBlock {
+  display: flex;
+  align-items: center;
+  gap: 125px;
+}
+
+.priceItem {
+  font-family: "Geologica";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 51px;
+
+  color: #060606;
+}
+
+.priceButton {
+  width: 165px;
+  height: 45px;
+
+  border: 1px solid #0071e3;
+  filter: drop-shadow(3px 3px 7.5px rgba(0, 0, 0, 0.25));
+  border-radius: 26px;
+
+  background: transparent;
+  transition: background 0.3s ease, color 0.3s ease;
+  color: #0071e3;
+  cursor: pointer;
+}
+
+.priceButton:hover {
+  background: #0071e3;
+  box-shadow: 3px 3px 7.5px rgba(0, 0, 0, 0.25);
+  color: white;
+}

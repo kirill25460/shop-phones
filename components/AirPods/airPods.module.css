@@ -75,15 +75,11 @@
   color: #ffffff;
 }
 
-.imageWrapper {
-  overflow: hidden;
-
-  width: 376px;
-  height: 427px;
+.imageWrapper img {
+  transition: transform 0.3s ease;
+  cursor: pointer;
 }
 
-.imageWrapper img {
-  object-fit: cover;
-  width: 100%;
-  height: auto;
+.imageWrapper:hover img {
+  transform: scale(1.2);
 }
