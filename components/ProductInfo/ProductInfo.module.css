@@ -1,5 +1,5 @@
 .productInfoConteiner {
-  margin-top: 100px;
+  margin-top: 150px;
   margin-bottom: 100px;
 
   padding-left: 100px;
@@ -115,4 +115,241 @@
   background: #0071e3;
   box-shadow: 3px 3px 7.5px rgba(0, 0, 0, 0.25);
   color: white;
+}
+
+.productCharacteristicBlock {
+  width: 1240px;
+  height: 1615px;
+
+  margin: 50px auto;
+
+  background: #ffffff;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3),
+    0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+  border-radius: 40px;
+}
+
+.productCharacteristicBlockMainText {
+  font-family: "Geologica";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 28px;
+
+  text-align: center;
+
+  padding-top: 50px;
+
+  color: #060606;
+}
+
+.productCharacteristicFlexBlock {
+  padding-top: 52px;
+  display: flex;
+
+  justify-content: center;
+  gap: 167px;
+}
+
+.productCharacteristicFirstBlock {
+}
+
+.productCharacteristicSecondBlock {
+}
+
+.mainTextTypeOfDescription {
+  font-family: "Geologica";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 28px;
+
+  color: #060606;
+
+  width: 220px;
+}
+
+.characteristicImg {
+  width: 364px;
+  height: 290px;
+
+  padding-top: 30px;
+}
+
+.colorChanger {
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.colorChangerSpan {
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  font-family: "Geologica";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 24px;
+
+  color: #5a5a5a;
+}
+
+.active {
+  font-family: "Geologica";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+  line-height: 24px;
+
+  color: #171717;
+}
+
+.productCharacteristicTextItem {
+  font-family: "Geologica";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+
+  color: #5a5a5a;
+
+  text-align: center;
+}
+
+.productCharacteristicList {
+  padding-top: 60px;
+
+  width: 466px;
+}
+
+.productCharacteristicListItem {
+  font-family: "Geologica";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+
+  color: #6e6e73;
+}
+
+.productCharacteristicListItem:not(:last-child) {
+  padding-bottom: 10px;
+}
+
+.productCharacteristicCapacityBlock {
+  display: flex;
+  gap: 30px;
+
+  padding-bottom: 51px;
+}
+
+.productCharacteristicCapacityList {
+  list-style: none;
+}
+
+.productCharacteristicCapacityListItem {
+  font-family: "Geologica";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 25px;
+
+  color: #5a5a5a;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.productCharacteristicCapacityListItem:not(:last-child) {
+  padding-bottom: 13px;
+}
+
+.productCharacteristicCapacityListItem.active {
+  font-weight: 800;
+  color: #171717;
+}
+
+.productText {
+  width: 366px;
+
+  font-family: "Geologica";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+
+  color: #5a5a5a;
+
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.productTextItem {
+  width: 366px;
+
+  font-family: "Geologica";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+
+  color: #5a5a5a;
+
+  padding-bottom: 50px;
+}
+
+.chipList {
+  padding-top: 20px;
+  padding-bottom: 50px;
+
+  width: 344px;
+}
+
+.chipListItem {
+  font-family: "Geologica";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+
+  color: #6e6e73;
+}
+
+.chipListItem:not(:last-child) {
+  padding-bottom: 21px;
+}
+
+.lastProductCharacteristicBlock {
+  padding-top: 40px;
+
+  margin: 0 auto;
+  max-width: 1000px;
+  gap: 136px;
+}
+
+.lastProductCharacteristicBlock {
+  display: flex;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.productCharacteristicItemBlock {
+}
+
+.listCharacteristic {
+  width: 478px;
+}
+
+.listCharacteristicItem {
+  font-family: "Geologica";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+
+  color: #6e6e73;
+  padding-top: 20px;
 }
