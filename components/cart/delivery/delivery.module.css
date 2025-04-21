@@ -317,3 +317,85 @@
 
   text-align: center;
 }
+
+.contentWrapper {
+  transition: transform 0.5s ease;
+}
+
+.hovered .contentWrapper {
+  transform: translateY(-10px);
+}
+
+.addToCartBtn {
+  background: #0071e3;
+  box-shadow: 3px 3px 7.5px rgba(0, 0, 0, 0.25);
+  border-radius: 26px;
+
+  width: 209px;
+  height: 33px;
+
+  font-family: "Geologica";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 25px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 0;
+  color: #ffffff;
+  cursor: pointer;
+
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.hovered .addToCartBtn {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.hovered .addToCartBtn {
+  opacity: 1;
+}
+
+.hoveredAddToCartBtn {
+  width: 207px;
+  height: 31px;
+
+  background: #ffffff;
+  border-radius: 29px;
+
+  font-family: "Geologica";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 25px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #0071e3;
+  cursor: pointer;
+
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.hovered .hoveredAddToCartBtn {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.hovered .hoveredAddToCartBtn {
+  opacity: 1;
+}
