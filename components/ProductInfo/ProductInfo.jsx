@@ -2,11 +2,26 @@ import styles from "./ProductInfo.module.css";
 import Image from "next/image";
 import iphone from "../../public/iphone_15_pro.png";
 import characteristicIphonImg from "../../public/characteristicIphonImg.png";
+import airpods from "../../public/airpods_card.webp";
+import checkmark from "../../public/checkmark.png";
 import { useState } from "react";
 
 export default function ProductInfo() {
   const [activeColorIdSpan, setActiveColorIdSpan] = useState(null);
   const [activeColorIdItem, setActiveColorIdItem] = useState(null);
+  const [hoveredIndex, setHoveredIndex] = useState(null);
+  const [isPurchasedFirst, setIsPurchasedFirst] = useState(false);
+  const [isPurchasedSecond, setIsPurchasedFirstSecond] = useState(false);
+  const [isPurchasedFirstThird, setIsPurchasedThird] = useState(false);
+  const [isPurchasedFourth, setIsPurchasedFourth] = useState(false);
+
+  const handleMouseEnter = (index) => {
+    setHoveredIndex(index);
+  };
+
+  const handleMouseLeave = () => {
+    setHoveredIndex(null);
+  };
 
   const handleClickSpan = (id) => {
     setActiveColorIdSpan(id);
@@ -14,6 +29,23 @@ export default function ProductInfo() {
 
   const handleClickItem = (id) => {
     setActiveColorIdItem(id);
+  };
+
+  const togglePurchased = (index) => {
+    switch (index) {
+      case 1:
+        setIsPurchasedFirst(true);
+        break;
+      case 2:
+        setIsPurchasedFirstSecond(true);
+        break;
+      case 3:
+        setIsPurchasedThird(true);
+        break;
+      case 4:
+        setIsPurchasedFourth(true);
+        break;
+    }
   };
 
   const colorsSpan = [
@@ -28,6 +60,37 @@ export default function ProductInfo() {
     { name: "128 ГБ", id: 1 },
     { name: "256 ГБ", id: 2 },
     { name: "512 ГБ", id: 3 },
+  ];
+
+  const products = [
+    {
+      id: 1,
+      name: "Air Pods Pro 2",
+      price: "1,090.00 zł",
+      image: airpods,
+      isPurchased: isPurchasedFirst,
+    },
+    {
+      id: 2,
+      name: "Air Pods Pro 2",
+      price: "1,090.00 zł",
+      image: airpods,
+      isPurchased: isPurchasedSecond,
+    },
+    {
+      id: 3,
+      name: "Air Pods Pro 2",
+      price: "1,090.00 zł",
+      image: airpods,
+      isPurchased: isPurchasedFirstThird,
+    },
+    {
+      id: 4,
+      name: "Air Pods Pro 2",
+      price: "1,090.00 zł",
+      image: airpods,
+      isPurchased: isPurchasedFourth,
+    },
   ];
 
   return (
@@ -65,6 +128,7 @@ export default function ProductInfo() {
           </div>
         </div>
       </div>
+
       <div className={styles.productCharacteristicBlock}>
         <h3 className={styles.productCharacteristicBlockMainText}>
           Характеристики
@@ -208,7 +272,6 @@ export default function ProductInfo() {
                 </li>
               </ul>
             </div>
-
             <div className={styles.productCharacteristicItemBlock}>
               <h4 className={styles.mainTextTypeOfDescription}>
                 Операційна система
@@ -218,7 +281,6 @@ export default function ProductInfo() {
               </p>
             </div>
           </div>
-
           <div className={styles.row}>
             <div className={styles.productCharacteristicItemBlock}>
               <h4 className={styles.mainTextTypeOfDescription}>
@@ -237,7 +299,6 @@ export default function ProductInfo() {
                 </li>
               </ul>
             </div>
-
             <div className={styles.productCharacteristicItemBlock}>
               <h4 className={styles.mainTextTypeOfDescription}>
                 Зв’язок і порти
@@ -257,6 +318,56 @@ export default function ProductInfo() {
             </div>
           </div>
         </div>
+      </div>
+
+      <div className={styles.additionalProductsBlock}>
+        <h2 className={styles.mainTextAdditionalProducts}>
+          З цим товаром часто купують разом:
+        </h2>
+        <ul className={styles.listBuy}>
+          {products.map((product, index) => (
+            <li
+              key={product.id}
+              className={`${styles.itemBuy} ${
+                hoveredIndex === index ? styles.hovered : ""
+              }`}
+              onMouseEnter={() => handleMouseEnter(index)}
+              onMouseLeave={handleMouseLeave}
+            >
+              <div className={styles.contentWrapper}>
+                <div className={styles.imgBlock}>
+                  <Image
+                    src={product.image}
+                    alt={product.name}
+                    width={126}
+                    height={143}
+                  />
+                </div>
+                <p className={styles.itemMainText}>{product.name}</p>
+                <p className={styles.itemText}>{product.price}</p>
+              </div>
+              {product.isPurchased ? (
+                <button
+                  className={`${styles.hoveredAddToCartBtn} ${
+                    hoveredIndex === index ? styles.visible : ""
+                  }`}
+                  onClick={() => togglePurchased(product.id)}
+                >
+                  <Image src={checkmark} alt="EvoMac Logo" />
+                </button>
+              ) : (
+                <button
+                  className={`${styles.addToCartBtn} ${
+                    hoveredIndex === index ? styles.visible : ""
+                  }`}
+                  onClick={() => togglePurchased(product.id)}
+                >
+                  Додати в кошик
+                </button>
+              )}
+            </li>
+          ))}
+        </ul>
       </div>
     </div>
   );
